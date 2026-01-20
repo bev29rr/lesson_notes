@@ -1,5 +1,6 @@
 Sections 3 - 4
-# 36
+# Section 3
+## 36 - Development Methodologies
 - Waterfall
 - Spiral
 - Agile
@@ -27,7 +28,7 @@ Sections 3 - 4
 - Focus on prototypes
 - Regular feedback from client
 - Less focus on **planning** and more on **faster prototypes** (for feedback)
-# 37 & 38
+## 37 & 38 - Pseudo-code
 Careful with scopes:
 ```vbscript
 global string = "foo"
@@ -59,7 +60,7 @@ names.push("Emanuel")
 names.push("Francisco") 'error here
 ```
 
-# 39
+## 39 - Paradigms
 Low-level languages:
 - Machine code
 - Assembly code
@@ -77,7 +78,7 @@ Programming paradigms:
 	- Polymorphism
 - Functional
 - Declarative (vs Imperative)
-# 40
+## 40 -Procedural Programming
 Constants (mutating references):
 ```js
 let x = 5;
@@ -96,7 +97,8 @@ myFile = openRead("sample.txt") 'Creates file handler
 x = myFile.readLine()
 myFile.close() 'File handler MUST be closed
 ```
-# 41
+## 41 - Assembly
+
 | Mnemonic | Instruction        |
 | -------- | ------------------ |
 | ADD      | Add                |
@@ -118,8 +120,7 @@ Remember that for LMC assembly, left hand side stores the reference to that line
 two DAT 2
 ```
 Also remember that *INP* and *OUT* store the value into the accumulator and outputs the value of the accumulator respectively. They **DO NOT ACCEPT A PARAMETER!**
-# 42
-
+## 42 - Memory Addressing
 ### Addressing modes
 #### Immediate
 - Holds the value directly
@@ -134,3 +135,98 @@ Also remember that *INP* and *OUT* store the value into the accumulator and outp
 - Index register **(IR)** stores a value
 - Index register is incremented (by the value provided) 
 - and the value in the memory address is the value
+
+## 43 - OOP
+### Basic Terminology
+```vbscript
+class Dog 'class
+	height 'attribute
+	
+	Sub Constructor(h) 'constructor (constructor is a procedure)
+		 height = h
+	End Sub
+	
+	Function GetHeight 'method
+	End Function
+End Class
+```
+## Encapsulation
+Encapsulation means **hiding internal data** and only allowing access through **controlled methods**. This protects data.
+```java
+class BankAccount {
+    private double balance;
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+    
+    public double withdraw() {
+	    if (amount - balance > 0) {
+		    balance -= amount; // only allows withdraws of money if possible 
+	    }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+```
+## Inheritance
+```vb
+Class Animal
+	...
+End Class
+
+Class Dog 
+	Inherits Animal
+End Class
+```
+Allows a class to reuse and extend the behaviour of properties of another class.
+## Polymorphism
+**One interface, many behaviours**. This means that the same method call can behave differently on the object type.
+```java
+class Animal {
+    void makeSound() {
+        System.out.println("");
+    }
+}
+
+class Dog extends Animal {
+    void makeSound() {
+        System.out.println("Bark");
+    }
+}
+
+Animal a1 = new Animal();
+Animal a2 = new Dog();
+
+a1.makeSound(); // Nothing
+a2.makeSound(); // Bark
+```
+# Section 4 - Exchanging Data
+## 44 - Compression
+**Lossy** looses data and **lossless** retains all of the data.
+Data compression is important for **data transfers** via the **internet**
+### Lossy
+| Advantages                     | Disadvantages                                          |
+| ------------------------------ | ------------------------------------------------------ |
+| Reduces the size significantly | Permanent quality loss                                 |
+| Adjustable compression levels  | Repeating re-encoding can reduce quality significantly |
+### Lossless
+| Advantages                                        | Disadvantages                                      |
+| ------------------------------------------------- | -------------------------------------------------- |
+| No data loss                                      | Smaller reduction in file size                     |
+| Quality does not degrade after repeat re-encoding | May create overhead larger than original file size |
+## 45 - RLE & Dictionary Coding
+### Run Length Encoding
+Groups consecutive repeated values.
+### Dictionary Coding
+Replaces **recurring patterns** of data with short references (codes).
+## 46 - Encryption
+**Symmetric** uses the same key to encrypt and decrypt, **asymmetric** uses a different key to encrypt and decrypt.
+
+For asymmetric encryption, to encrypt a message, the message is **encrypted with the public key**. To **decrypt** the message, the **private key is used**.
+
+For symmetric encryption, the key must be shared (privately).
+## 47 - Hashing
+Hashing is **one-way** (can't unhash) and returns a **fixed length output** every time. A good hashing algorithm is one that **rarely has collisions**.
