@@ -59,4 +59,20 @@ If the independent float is **negative**, set it to **zero**.
 ### Interfering float
 The part of the total float that, if used, will reduce the float of the other activities.
 $f_\text{interfering} = f_\text{total} - f_\text{independent}$
+## Resourcing and scheduling
+To analyse a critical path, a **cascade chart** is commonly used.
+### Cascade chart (Gannt chart)
+- **Time** on the **horizontal axis** (no vertical axis)
+- Each bar represents an activity:
+	- **Critical activities** take up the **bottom row**, joined up together
+	- Non-critical activities start at their (first event's) **earliest possible start time** and have a width of their **duration**
+		- Additionally, their **latest possible end time** (their float) is drawn with a **dashed box**
+- Dummy activities are **omitted**
 
+Note, for multiple critical paths, only draw one at the bottom, and stack the remaining activities on top.
+### Resource histogram
+Using the cascade chart, we can begin to think about resource (worker) allocation.
+- **Time** on the **horizontal axis** and **workers** on the **vertical axis**
+- **Flatten down all of the activities** (ignoring their float time) to use the minimum amount of workers possible (don't move them across their floats)
+
+If an activity can be moved around its float, then it shows us that the problem can be done with less workers
