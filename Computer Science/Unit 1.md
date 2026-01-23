@@ -1,7 +1,6 @@
 Sections 1 - 2
 # 1
-// TODO: catch up
-
+#TODO: catch up
 ## 14 (Parallel and Concurrency)
 Concurrency means multiple things happening at the same time.
 

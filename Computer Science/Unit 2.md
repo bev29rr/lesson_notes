@@ -278,17 +278,49 @@ Relationship types:
 - M : M (many to many)
 Many to many relationships have to be done using a link table. This is where you add a buffer table which gets a many input and returns a singular output
 
-## 52 - Data management
-### Capturing data
+## 52 & 53 - Data management & Querying
+#### Capturing data
 - OCR, OMR
 - Forms
-### Querying data
+#### Querying data
 - SQL queries (SELECT)
 - Non-SQL queries
-### Managing data
+#### Managing data
 - Inserting, updating
 - Deleting
-### Exchanging data
+#### Exchanging data
 - CSV/JSON
 - API/Https
 - USB Sticks/Discs
+### Querying
+#### Indexing
+A **secondary key/index** can be added to a field in a table to make lookup times smaller.
+
+E.g
+```sql
+SELECT * FROM this_table WHERE x = "...";
+```
+A separate table with a x -> val mapping can be created to reduce lookup times from $O(n) \rightarrow O(log(n))$
+
+#### QBE
+Haven't come up in exams (so far) but can.
+It involves **filling in example values** instead of writing queries
+
+## 54 - SQL
+
+#TODO: finish off the last few slides
+
+Statements that need to be known:
+```sql
+SELECT
+FROM
+WHERE
+LIKE
+AND
+OR
+DELETE
+INSERT
+DROP
+JOIN 
+-- Wildcards
+```
