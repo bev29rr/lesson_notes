@@ -228,5 +228,67 @@ Replaces **recurring patterns** of data with short references (codes).
 For asymmetric encryption, to encrypt a message, the message is **encrypted with the public key**. To **decrypt** the message, the **private key is used**.
 
 For symmetric encryption, the key must be shared (privately).
-## 47 - Hashing
+## 47 & 48 - Hashing
 Hashing is **one-way** (can't unhash) and returns a **fixed length output** every time. A good hashing algorithm is one that **rarely has collisions**.
+## 49 - Databases
+Conditions for a database:
+- Structured
+- Stores data
+- Persistent ~~(most of the time)~~
+
+### Terminology
+- Tables/entities
+	- Records/rows
+		- Fields/attributes/columns
+### Flat file vs relational databases
+#### Flat file
+Stores all data in a **single file** or **unlinked tables** with no **defined relationships**
+#### Relational databases
+Stores data across **multiple tables that are linked** using **primary and foreign keys**
+## 50 - Normalisation
+Normalisation is done in order, e.g.:
+0NF -> 1NF -> 2NF -> 3NF -> ...
+### Types
+#### 1NF
+- **Unique** field names
+- "**Atomic**" data (single values, ~~arrays~~)
+#### 2NF
+- In 1NF
+- If it has a composite key, all other fields are dependent on all parts of the key
+#### 3NF
+- In 2NF
+- No transitive dependencies (fields cant be dependent on any non-primary-key fields)
+#### Summary
+0NF: any database
+1NF: **no** records **within** records
+2NF: dependent on the **whole key**
+3NF: **only dependent** on the **key**
+
+### Reasons for normalisation
+- DRY
+- Faster modifying/looking up
+### Reasons against normalisation
+- Harder to implement
+- More complex queries
+## 51 - Database keys and relationship types
+Primary keys serve as unique identifiers for each row in a database. Foreign keys link the data from one table to other (references).
+Relationship types:
+- 1 : M (one to many)
+- M : 1 (many to one)
+- M : M (many to many)
+Many to many relationships have to be done using a link table. This is where you add a buffer table which gets a many input and returns a singular output
+
+## 52 - Data management
+### Capturing data
+- OCR, OMR
+- Forms
+### Querying data
+- SQL queries (SELECT)
+- Non-SQL queries
+### Managing data
+- Inserting, updating
+- Deleting
+### Exchanging data
+- CSV/JSON
+- API/Https
+- USB Sticks/Discs
