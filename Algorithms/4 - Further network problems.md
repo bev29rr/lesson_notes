@@ -76,3 +76,38 @@ Using the cascade chart, we can begin to think about resource (worker) allocatio
 - **Flatten down all of the activities** (ignoring their float time) to use the minimum amount of workers possible (don't move them across their floats)
 
 If an activity can be moved around its float, then it shows us that the problem can be done with less workers
+# 4.2 Network flows
+When continuous flow is required, the problem can be modelled as a **network flow**. The weights on the arcs show the capacities.
+- All flows start at the **source** (vertex) -> S
+- and end at the **sink** -> T
+- The **maximum flow** of a **path** "ABCD" is the smallest **capacity** in the path
+**Capacity graphs** and **feasible flow graphs** are different.
+### Feasible flow graphs
+- Shows the allowed movement (of liquid) that 
+- When the capacity is the same as the feasible flow of an arc, it is saturated
+- The **flow** of a **path** "ABCD" is the smallest **flow** in the path
+### Checking flow validity
+To check whether a flow is valid, create a arc-flow table (to check if the flow doesn't exceed the capacity):
+
+| Arc | Flow | Capacity |
+| --- | ---- | -------- |
+|     |      |          |
+Then, create a vertex-flow table (to check that the flow coming is is equal to the flow coming out):
+
+| Vertex | Flow in | Flow out |
+| ------ | ------- | -------- |
+|        |         |          |
+## Cuts
+Notation:
+```
+{S, A}, {B, C, D, T}
+```
+where one set contains the source and the other set contains the sink.
+Drawn in with a **dashed line** a separation of the vertices from the source set and the sink set.
+#### Determining the cut value
+The capacity (value) of the cut is the amount of arcs cut that contribute **from the source to the sink set**. Ignore the arcs cut that are directed towards the source set.
+## Minimum cut theorem
+Write out all of the possible cuts with their capacities. The **minimum capacity** is equal to the **maximum flow** through a network.
+It also tells us that the arcs that are cut are **saturated**.
+## Supersources & supersinks
+Supersources (and supersinks) are a way to visualise all sources as one by extending the current network to make the sources all be derived from one. Make sure to balance the flows, where the flows in = flows out
