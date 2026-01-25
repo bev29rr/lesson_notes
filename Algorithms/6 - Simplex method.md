@@ -58,12 +58,12 @@ E.g. :
 		$s_3=0:3x+2(0)=2400 \Rightarrow x=800$ 
 3. Since $s_2=0$ has the smallest value for $x$, we select this pivot. Hence:
 
-| P   | x     | y   | $s_1$ | $s_2$ | $s_3$ | RHS  |          |
-| --- | ----- | --- | ----- | ----- | ----- | ---- | -------- |
-| 1   | -0.8  | -1  | 0     | 0     | 0     | 0    |          |
-| 0   | 1     | 1   | 1     | 0     | 0     | 1000 |          |
-| 0   | **2** | 1   | 0     | 1     | 0     | 1500 | <- Pivot |
-| 0   | 3     | 2   | 0     | 0     | 1     | 2400 |          |
+| P   | x     | y    | $s_1$ | $s_2$ | $s_3$ | RHS  |          |
+| --- | ----- | ---- | ----- | ----- | ----- | ---- | -------- |
+| 1   | -1    | -0.8 | 0     | 0     | 0     | 0    |          |
+| 0   | 1     | 1    | 1     | 0     | 0     | 1000 |          |
+| 0   | **2** | 1    | 0     | 1     | 0     | 1500 | <- Pivot |
+| 0   | 3     | 2    | 0     | 0     | 1     | 2400 |          |
 Graphically, it represents moving along the line $y=0$ and reaching the largest value for $x$ in the feasible region ($x=750$)
 ## Carrying out an iteration
 Create a new table with these rows:
@@ -73,15 +73,29 @@ Create a new table with these rows:
 
 E.g. :
 
-| P   | x     | y             | $s_1$ | $s_2$         | $s_3$ | RHS  |
-| --- | ----- | ------------- | ----- | ------------- | ----- | ---- |
-| 1   | -0.8  | -1            | 0     | 0             | 0     | 0    |
-| 0   | 1     | 1             | 1     | 0             | 0     | 1000 |
-| 0   | **1** | $\frac{1}{2}$ | 0     | $\frac{1}{2}$ | 0     | 750  |
-| 0   | 3     | 2             | 0     | 0             | 1     | 2400 |
+| P   | x     | y               | $s_1$ | $s_2$          | $s_3$ | RHS |
+| --- | ----- | --------------- | ----- | -------------- | ----- | --- |
+| 1   | 0     | $-\frac{3}{10}$ | 0     | $\frac{1}{2}$  | 0     | 750 |
+| 0   | 0     | $\frac{1}{2}$   | 1     | $-\frac{1}{2}$ | 0     | 250 |
+| 0   | **1** | $\frac{1}{2}$   | 0     | $\frac{1}{2}$  | 0     | 750 |
+| 0   | 0     | $\frac{1}{2}$   | 0     | $-\frac{3}{2}$ | 1     | 150 |
 Example calculation (for the first row):
 	**Original equation:**
-	$P-0.8x-1=0$
+	$P-0.8x-y=0$ 
 	**New pivot equation:**
 	$x+\frac{y}{2}+\frac{s_2}{2}=750$ 
-	
+	**Combined equations:**
+	$P-0.3y+\frac{s_2}{2}=750$ 
+### Iteration finalisation criteria
+If an iteration has **non-negative basic variables**, then it corresponds to the **basic feasible solution**. In the example above:
+
+**Non-basic variables:**
+	$y=0$
+	$s_2=0$
+**Basic variables:**
+	$P=750$
+	$s_1=250$
+	$x=750$
+	$s_3=150$
+
+This is where $y=0$ meets $s_2=0$
