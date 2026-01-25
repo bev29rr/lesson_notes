@@ -1,5 +1,4 @@
-Sections 3 - 4
-# Section 3
+# Section 3 - Software Development
 ## 36 - Development Methodologies
 - Waterfall
 - Spiral
@@ -307,20 +306,42 @@ Haven't come up in exams (so far) but can.
 It involves **filling in example values** instead of writing queries
 
 ## 54 - SQL
-
-#TODO: finish off the last few slides
-
 Statements that need to be known:
 ```sql
 SELECT
 FROM
 WHERE
-LIKE
-AND
-OR
+LIKE, AND, OR
 DELETE
 INSERT
 DROP
 JOIN 
 -- Wildcards
 ```
+Uses of each:
+```sql
+SELECT * FROM students WHERE grade = 'A' OR grade 'B';
+SELECT name FROM students WHERE name LIKE 'A%' AND grade = 'A';
+INSERT INTO students (name, age, grade) VALUES ('Bob', 12, 'B');
+DELETE FROM students WHERE name = 'Bob';
+DROP TABLE students;
+
+SELECT students.name, courses.course_name FROM students JOIN courses ON students.course_id = courses.id; -- Pseudo foreign key assignment
+```
+## 55 - Referential integrity
+If a **foreign key** exists in one table, it must **match a primary key** in another table. Basically, it ensures that changes are consistent across a database.
+## 56 - Transactions and ACID
+### Transaction
+A transaction is a **group of database operations** that are treated as **one single unit of work**. Either all operations succeed or none of them happen. They exists to stop the database ending up in an **inconsistent state** (power cut, crash).
+### Record locking
+When a transaction is using a **record** (row), **it locks it** to prevent other transactions from modifying it at the same time. There can be separate read/write locks. They can however, cause **deadlocks**: when two (or more) transactions lock records that the other transaction requires.
+### ACID
+Rules that govern transaction processing:
+#### Atomicity
+Transactions either processed in full or not at all. #summary
+#### Consistency
+Respecting referential integrity. #summary
+#### Isolation
+Concurrent queries are treated as if sequential. #summary
+#### Durability
+Successful queries will persist (permanently). #summary

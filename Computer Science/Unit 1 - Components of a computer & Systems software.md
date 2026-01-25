@@ -1,5 +1,5 @@
 Sections 1 - 2
-# 1
+# 1 - Components of a computer
 #TODO: catch up
 ## 14 (Parallel and Concurrency)
 Concurrency means multiple things happening at the same time.
@@ -36,6 +36,7 @@ ROM can be considered a **security feature** since it is read-only.
 ## 18
 **Virtual storage**: storage that is physically remote from the host PC (doesn’t have to be on the cloud).
 
+# 2 - Systems software
 ## 19 (OS)
 An **Operating System** provides:
 - resource management

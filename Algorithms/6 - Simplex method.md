@@ -99,3 +99,4 @@ If an iteration has **non-negative basic variables**, then it corresponds to the
 	$s_3=150$
 
 This is where $y=0$ meets $s_2=0$
+## 6.2 Non-standard forms
