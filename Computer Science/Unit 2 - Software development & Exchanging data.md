@@ -338,10 +338,11 @@ When a transaction is using a **record** (row), **it locks it** to prevent other
 ### ACID
 Rules that govern transaction processing:
 #### Atomicity
-Transactions either processed in full or not at all. #summary
+Transactions either processed in full or not at all. 
 #### Consistency
-Respecting referential integrity. #summary
+Respecting referential integrity. 
 #### Isolation
-Concurrent queries are treated as if sequential. #summary
+Concurrent queries are treated as if sequential.
 #### Durability
-Successful queries will persist (permanently). #summary
+Successful queries will persist (permanently). 
+#summary
