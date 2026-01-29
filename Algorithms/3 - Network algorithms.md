@@ -19,7 +19,7 @@ Same objectives as Kruskal's algorithm
 
 We always choose **n-1** nodes because for a tree of **n** nodes, it contains **n-1** nodes is the minimum amount of nodes 
 ### How to do (in tabular form):
-// TODO: more practice on this before you can write it up
+more practice on this before you can write it up #todo 
 
 # 3.2 Finding the shortest path
 ## Dijkstra's Algorithm
