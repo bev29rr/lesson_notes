@@ -20,7 +20,7 @@
 - Continuous delivery
 - **Expects** requirements to change
 #### XP
-- Focus on high quality code released frequently
+- Focus on **high quality** code released frequently
 - Regular automated tests
 - **Pair programming** and **code reviews**
 #### RAD
@@ -118,7 +118,7 @@ Remember that for LMC assembly, left hand side stores the reference to that line
 	HLT
 two DAT 2
 ```
-Also remember that *INP* and *OUT* store the value into the accumulator and outputs the value of the accumulator respectively. They **DO NOT ACCEPT A PARAMETER!**
+Also remember that *INP* and *OUT* store the value into the accumulator and outputs the value of the accumulator respectively. They **DO NOT ACCEPT AN OPERAND!**
 ## 42 - Memory Addressing
 ### Addressing modes
 #### Immediate
@@ -275,13 +275,12 @@ Relationship types:
 - 1 : M (one to many)
 - M : 1 (many to one)
 - M : M (many to many)
-Many to many relationships have to be done using a link table. This is where you add a buffer table which gets a many input and returns a singular output
+Many to many relationships have to be done using a **link table**. This is where you add a buffer table which gets a many input and returns a singular output
 
 ## 52 & 53 - Data management & Querying
 #### Capturing data
 - OCR, OMR
-- Forms
-#### Querying data
+- Forms#### Querying data
 - SQL queries (SELECT)
 - Non-SQL queries
 #### Managing data
@@ -299,8 +298,7 @@ E.g
 ```sql
 SELECT * FROM this_table WHERE x = "...";
 ```
-A separate table with a x -> val mapping can be created to reduce lookup times from $O(n) \rightarrow O(log(n))$
-
+A separate table with a x -> val mapping can be created to reduce lookup times from $O(n) \rightarrow O(log(n))$ 
 #### QBE
 Haven't come up in exams (so far) but can.
 It involves **filling in example values** instead of writing queries
