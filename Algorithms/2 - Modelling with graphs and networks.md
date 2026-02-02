@@ -9,8 +9,7 @@
 - **Simply connected** -> simple and connected
 	- **Tree** -> a simply connected graph with the **minimum** number of arcs
 	- **Complete graph** -> a simply connected graph with the **maximum** number of arcs
-- **Bipartite graph** -> 
-- A graph with $n$ vertices is denoted as $K_n$ 
+- **Bipartite graph** -> A graph with $n$ vertices is denoted as $K_n$ 
 - **Digraph** -> A graph with directed arcs
 - **Undirected** -> Opposite of a digraph
 ## Incidence matrices 
@@ -22,10 +21,11 @@ E.g:
 | **A** | 0   | 1   | 1   |
 | **B** | 1   | 2   | 1   |
 | **C** | 1   | 1   | 0   |
+
 Notice how the leading diagonal ($y=-x$), the number of edges must be a multiple of 2.
 
 ### Isomorphic
-Two graphs are said to be **isomorphic** if they have the same **incidence matrix**.
+Two graphs are said to be **isomorphic** if they share the same **incidence matrix**.
 
 # 2.3 Modelling with networks
 ### Common Problems

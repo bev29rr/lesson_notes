@@ -9,6 +9,7 @@ Activities done by a group of people can have dependencies. For example, if pers
 | D   | Brush teeth     | 4           | C                      |
 | E   | Pack bag        | 7           | -                      |
 | F   | Leave the house | 2           | B, D, E                |
+
 ## Activity networks
 The same concept can be modelled using an activity network:
 - **Arcs** represent **activities**
@@ -92,11 +93,13 @@ To check whether a flow is valid, create a arc-flow table (to check if the flow 
 | Arc | Flow | Capacity |
 | --- | ---- | -------- |
 |     |      |          |
+
 Then, create a vertex-flow table (to check that the flow coming is is equal to the flow coming out):
 
 | Vertex | Flow in | Flow out |
 | ------ | ------- | -------- |
 |        |         |          |
+
 ## Cuts
 Notation:
 ```

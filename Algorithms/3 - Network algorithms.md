@@ -4,12 +4,10 @@ Arcs -> Edges
 Nodes -> Vertices
 ## Kruskal's algorithm
 A **greedy** algorithm used to find the **MST** (Minimum Spanning Tree) of a connected, weighted, undirected graph 
-
 ### How to do:
 1. Sort arcs in **ascending** order (of weight)
 2. Choose the next arc and try and place it, discard it if it **creates a cycle**
 3. Repeat until **n-1** arcs are chosen (minimum amount)
-
 ## Prim's algorithm
 Same objectives as Kruskal's algorithm
 ### How to do:

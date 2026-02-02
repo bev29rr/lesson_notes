@@ -26,6 +26,7 @@ E.g. :
 | 0   | 1   | 1    | 1     | 0     | 0     | 1000 |
 | 0   | 2   | 1    | 0     | 1     | 0     | 1500 |
 | 0   | 3   | 2    | 0     | 0     | 1     | 2400 |
+
 Tip: remember that if $P = x + 0.8y$, then $P - x - 0.8y = 0$
 ### Basic & non-basic variables
 **Non-basic** variables means that the values are set to **zero**. **Basic** variables can **either** be **non-zero** or **zero**. The values of basic variables is assigned to the value of the RHS when the basic variables are 1. 
@@ -64,6 +65,7 @@ E.g. :
 | 0   | 1     | 1    | 1     | 0     | 0     | 1000 |          |
 | 0   | **2** | 1    | 0     | 1     | 0     | 1500 | <- Pivot |
 | 0   | 3     | 2    | 0     | 0     | 1     | 2400 |          |
+
 Graphically, it represents moving along the line $y=0$ and reaching the largest value for $x$ in the feasible region ($x=750$)
 ## Carrying out an iteration
 Create a new table with these rows:
@@ -79,6 +81,7 @@ E.g. :
 | 0   | 0     | $\frac{1}{2}$   | 1     | $-\frac{1}{2}$ | 0     | 250 |
 | 0   | **1** | $\frac{1}{2}$   | 0     | $\frac{1}{2}$  | 0     | 750 |
 | 0   | 0     | $\frac{1}{2}$   | 0     | $-\frac{3}{2}$ | 1     | 150 |
+
 Example calculation (for the first row):
 	**Original equation:**
 	$P-0.8x-y=0$ 
