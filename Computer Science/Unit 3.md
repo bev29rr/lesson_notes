@@ -79,3 +79,31 @@ In **client-server**, all nodes are connected to a central server (the internet)
 | Servers can be expensive       | No single point of failure      |
 | Requires sysadmin skills       | Can't control centrally         |
 | Single point of failure        | Peers may be slow at some tasks |
+## 67 HTML, CSS & JS
+### JavaScript
+Use `var` instead of `let` or `const`!
+Avoid ternary operators, arrow functions and functional methods.
+#### DOM Modification
+```js
+chosenElement = document.getElementById("foo");
+chosenElement.innerHTML = "Hello!!";
+
+document.write("Hello world"); // careful with real uses
+alert("Hello");
+```
+### HTML 
+Purpose: defines the **structure** and **content** of the page.
+### CSS
+Purpose: provides **styling** and **formatting** to the page
+## 68 PageRank
+### Indexing vs ranking
+**Indexing**: A crawler/spider visits web pages, adding them to a DB (to find keywords). 
+**Ranking**: Pages that are in the index are ordered/ranked on search engine results. Done by matching against user queries. PageRank is a form of ranking
+$$PR(A)=(1-d)+d(\frac{PR(B)}{L(B)}) + ...+\frac{PR(n)}{L(n)}$$
+where:
+$$PR(A) = \text{PageRank of A}$$
+$$L(A) = \text{Number of outbound links}$$
+$$d = \text{damping factor}$$
+The damping factor tells us: what percentage of people are likely to link-follow. For example, a damping factor of $75\%$ means that $75\%$ of the users will follow the links.
+## 69 Client side vs server side
+Client side code runs in the browser, has access to the DOM
