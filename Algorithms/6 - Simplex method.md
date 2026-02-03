@@ -46,7 +46,7 @@ Notice how these equations are the equivalent to the augmented lines, given that
 1. Analyse the objective function:
 	$P=x+0.8y$ 
 	 Notice how the $x$ variable increases at a faster rate than the $y$ value, hence, we first need to travel in the $x$
-2. Find the equation that holds the maximum value for the variable **within the feasible region** ($x$ in this case):
+2. Find the equation that holds the maximum value fomaximumr the variable **within the feasible region** ($x$ in this case):
 	1. Find the values (of $x$) for each equation (**setting $y=0$**)
 	2. Whichever one is the **smallest** is the going to be the **maximum value within the feasible region**
 3. Select that coefficient as the pivot
