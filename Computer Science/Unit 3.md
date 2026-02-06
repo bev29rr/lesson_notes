@@ -99,7 +99,7 @@ Purpose: provides **styling** and **formatting** to the page
 ### Indexing vs ranking
 **Indexing**: A crawler/spider visits web pages, adding them to a DB (to find keywords). 
 **Ranking**: Pages that are in the index are ordered/ranked on search engine results. Done by matching against user queries. PageRank is a form of ranking
-$$PR(A)=(1-d)+d(\frac{PR(B)}{L(B)}) + ...+\frac{PR(n)}{L(n)}$$
+$$PR(A)=(1-d)+d(\frac{PR(B)}{L(B)} + ...+\frac{PR(n)}{L(n)})$$
 where:
 $$PR(A) = \text{PageRank of A}$$
 $$L(A) = \text{Number of outbound links}$$
@@ -107,3 +107,28 @@ $$d = \text{damping factor}$$
 The damping factor tells us: what percentage of people are likely to link-follow. For example, a damping factor of $75\%$ means that $75\%$ of the users will follow the links.
 ## 69 Client side vs server side
 Client side code runs in the browser, has access to the DOM
+## 70 Data types 
+**Casting** is when you convert from one datatype to another.
+**Substring** in OCR Pseudo-code uses ``` string.substring(start, numOfChars) ```
+## 71 Binary to decimal
+Fairly basic so skipped
+## 72 - 75 Negative binary numbers
+### Sign and magnitude
+First bit represents the negative sign, and the rest is normal
+### 2's compliment
+Bits have the same magnitude, but the first bit is negative. To pad out positive integer 2's compliment numbers, add 1s after the left-most 1s bit.
+### Converting
+To convert **positive binary to 2's compliment**, hold the right-most 1s bit and flip all the other bits.
+## 76 Floating-point representation
+### Mantissa and exponent
+```ascii
+|-M-| |-E-|
+00010 00100
+```
+This represents $0.0010 \cdot 2^{3}$ 
+ Where the leading mantissa bit is -1, followed by $\frac{1}{2}$, $\frac{1}{4}$ and so on... 
+## 77 Normalising floating point
+Only normalise **mantissa**. 
+The normalised result is always the **most precise**.
+
+To normalise a 2's compliment, remember that the start must either be **01** (positive) or **10** (negative). 
