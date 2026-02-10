@@ -132,3 +132,5 @@ Only normalise **mantissa**.
 The normalised result is always the **most precise**.
 
 To normalise a 2's compliment, remember that the start must either be **01** (positive) or **10** (negative). 
+## 81 ASCII and UNICODE
+ASCII is always smaller than UNICODE (forget about UTF-8 for exams)
