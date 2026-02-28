@@ -28,8 +28,5 @@ Notes:
 ### Keywords
 - Arrays: **contiguous** memory
 - All: have a **single identifier**.
-## 83 - Complex data structures
+## 83, 84, 85 - Complex data structures
 ### Ways of 
-
-## 84 - 
-## 85
