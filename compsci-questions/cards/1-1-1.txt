@@ -1,0 +1,108 @@
+Define "ACC"
+    Accumulator
+    Holds all inputs/outputs
+    Stores the results of calculations from ALU
+Define "CIR"
+    Current Instruction Register
+    Holds current instruction being executed
+    Divided into operand and opcode
+Define "CU"
+    Control Unit
+    A processor which directs operations of CPU
+Define "MAR"
+    Memory Address Register
+    Holds the address of a location that is to be read from or written to
+Define "MDR"
+    Memory Data Register
+    Temporarily stores data that has been read or data that needs to be written
+Define "PC"
+    Program Counter
+    Holds address of next instruction to be executed
+    Incremented by 1 every cycle
+Define "Register"
+    Small memory cells which operate at very high speed
+    Temporarily store data and all operations occur in them
+Define 'Address Bus'
+    Transmits memory addresses specifying where data is to be sent to or retrieved from
+    Width is proportional to number of addressable memory locations
+Define 'ALU'
+    Arithmetic and Logic Unit
+    Carries out all arithmetical and logical operations
+Define 'Buses'→A set of parallel wires which connect two or more components inside CPU
+Define 'Cache'
+    CPU's onboard memory, retains data for repeat access.
+    As it fills up, unused instructions are replaced.
+Define 'Clock Speed'→Time taken for one clock cycle to complete.
+Define 'Contemporary Processors'
+    Processors which use a combination of Harvard and Von Neuman architecture.
+    Von Neuman - used when working with data and instructions in main memory
+    Harvard - used to divide the cache into instruction and data sections
+Define 'Control Bus'
+    Bi-directional
+    Transmits control signals between internal and external components
+    Commands, timings and status signals
+Define 'Core'→An independent processor that is able to run its own FDE cycle.
+Define 'Data Bus'
+    Bi-directional bus
+    Transports data and instructions
+Define 'Opcode'→Part of the instruction which specifies the type of instruction to be executed.
+Define 'Operand'→Bit of the instruction that contains the data, or the address of the data, upon which the operation is to be performed.
+Define 'Processor'
+    Circuit that executes instructions which allow programs to run.
+    'The brain of the computer'
+Define 'System Bus'→What is the collective term for the CPU buses.
+Define 'System Clock'
+    Electronic device which generates signals by switching between 0 and 1.
+    All processor activities begin on a clock pulse
+Define 'Von Neumann Architecture'
+    Program and data are stored in main memory (RAM)
+    Includes basic components of computer and processor in which a shared memory and shared data bus is used for both data and instructions.
+Define briefly 'FDE Cycle'→The sequence of operations completed to execute an instruction.
+Describe the 'decode'  phase of the FDE cycle→The contents of CIR are split into operand and opcode
+Describe the 'execute' phase of the FDE cycle→The decoded instruction is executed
+Describe the 'fetch' phase of the FDE cycle
+    Address from PC is copied to MAR
+    Instruction held at address is copied to MDR (data bus)
+    Simultaneously, contents of PC increased by 1
+    Value held in MDR is copied to CIR
+Explain 'Pipelining'
+    Process of completing the stages of the FDE cycle of three separate instructions simultaneously.
+    While one instruction is being executed, another is decoded and another is fetched.
+Explain why adding more RAM will improve the performance of a computer system.
+    Allows for more temporary data in RAM
+    Reduces need for virtual memories (reduce risk of disk thrashing)
+    RAM is quicker to access than VM/secondary storage
+    because data in VM needs to be swapped with data in RAM first
+How does cache influence the performance of the CPU?
+    Instructions fetched from main memory are sent to cache
+    More cache = more instructions can be stored
+    If instruction is required again; has quicker access
+List 2 advantages of the Harvard Architecture
+    Quicker execution: data and instructions can be fetched in parallel
+    Memories can be different sizes, which can make more efficient use of space
+List 2 advantages of the Von Neumann Architecture
+    Cheaper to develop as the CU is easier to design
+    Programs can be optimised in size
+List 3 factors that affect CPU performance
+    Clock speed
+    Number of cores
+    Amount/type of cache memory
+List 4 functions of the Control Unit
+    It controls how data moves around inside the CPU.
+    It tells the ALU, registers, and memory what to do.
+    It decodes instructions.
+    Sends control signals to make sure everything happens in the right order.
+Name 3 registers used during the FDE cycle→MDR, MAR and CIR
+State the name of the 3 buses which makeup the system bus.
+    Data bus
+    Control bus
+    Address bus
+State 2 benefits of “Parallel Processing”
+    Faster performance: more tasks done at the same time.
+    Better multitasking: smooth running of many programs.
+State 2 parallel processing limitations.
+    Not all tasks are parallel
+    More complex and costly (harder to program)
+State the name of the register that would be altered in the execute phase during a branch instruction.→Program Counter
+What happens to instructions at the CIR?→Divided into operand and opcode.
+What is the purpose of 'Pipelining'?→Aimed to reduce the amount of the CPU which is kept idle.

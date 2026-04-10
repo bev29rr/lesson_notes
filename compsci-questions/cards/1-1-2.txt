@@ -1,0 +1,50 @@
+Define 'CISC processors'
+    Complex Instruction Set Computers.
+    Large instruction set (which are built into the hardware).
+    Tries to accomplish as many tasks in as few lines of assembly code as possible.
+Define 'co-processor'→A secondary processor designed to supplement the activities of the primary processor
+Define 'GPU'
+    Graphics Processing Unit
+    Specialised co-processor
+    Designed to handle graphics,repetitive and visual tasks quickly and efficiently.
+Define 'Multi-core CPUs'
+    CPUs with multiple independent cores that can complete instructions separately.
+    Resulting in higher performance.
+Define 'Parallel Systems'
+    Use multiple processors/cores.
+    Tasks are split up into smaller parts.
+    Each processor/core works on a part at the same time.
+    Results are combined at the end.
+Define 'RISC processors'
+    Reduced Instruction Set Computers
+    Only has a small instruction set
+    Each instruction approximately one line of machine code and takes one clock cycle
+Define 'Threading'
+    Programming technique.
+    Allows a program to split into multiple threads (small tasks) that can be run in parallel or concurrently.
+Difference about CPU and GPU
+    CPU => handles all the main functions of a computer
+    GPU => specialized component which handles graphic and video rendering
+    GPU has thousands of cores, CPU between 2 and 64
+Explain 'Parallel Processing'→2+ processors used simultaneously to handle various components of a single activity.
+List 3 examples of tasks GPUs are good for
+    Image processing
+    Machine learning
+    Repetitive tasks in general
+RISC or CISC: Compiler has to do more work to translate high level code into machine code
+    RISC
+        The instruction set is small and simple.
+        Each instruction does less.
+        So, the compiler has to do more work to break down high-level code into many small instructions.
+RISC or CISC: less RAM is required since code is shorter
+    CISC
+    
+    RISC: more RAM required to store the code
+RISC or CISC: pipelining is possible since each instruction takes one clock cycle
+    RISC
+    
+    CISC: many specialized instructions are made, even though only a few are used
+T or F: All programs efficiently use multiple cores efficiently→F: not all programs have been designed to do so
+What is the effect on CPU performance of having multiple cores?
+    The more cores the more tasks can be executed in the same given time, as more than one FDE cycle will be being executed.
+    Thus, CPU performance increases.
