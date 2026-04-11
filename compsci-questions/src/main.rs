@@ -3,7 +3,7 @@ use std::fs;
 use std::io;
 use std::path::{Path, PathBuf};
 use rand::distr::weighted::WeightedIndex;
-use rand::prelude::Distribution;
+use rand::prelude::{Distribution, SliceRandom};
 use rand::rng;
 use serde_json;
 use pdf_canvas::{BuiltinFont, Pdf};
@@ -20,7 +20,7 @@ fn main() -> io::Result<()> {
 
     let counts_path = Path::new("cards/card-data.json");
     let counts = load_card_counts(counts_path)?;
-    let questions = choose_n(&entries, 20, &counts);
+    let questions = choose_n(&entries,30, &counts);
 
     let output_path = Path::new("output/questions.pdf");
     generate_pdf(&questions, output_path)?;
@@ -340,5 +340,6 @@ fn choose_n(
         weights.swap_remove(idx);
     }
 
+    selected.shuffle(&mut rng);
     selected
 }

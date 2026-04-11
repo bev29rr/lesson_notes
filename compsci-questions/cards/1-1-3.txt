@@ -1,0 +1,64 @@
+What type of storage are CDs, DVDs and Blu-Rays?
+    Optical storage.
+    Saves digital data by using laser light to read and write information on a disc.
+Define 'Input Device'→Device that can be used to put data/information into a computer.
+Define 'Output Device'→Device which can be used to send information from the computer.
+Give 4 benefits of flash (solid state) storage.
+    Durable: no moving parts
+    Lower power usage
+    Portable: small physical size
+    Fast: real time read speed
+How does magnetic devices store data?
+    Two magnetic states: polarized (0) and unpolarized (1).
+    If polarized: all magnetic poles align and can be read by a read/write head passing over the region.
+    If not polarized: magnetic poles are randomly scattered and produce different reading on a read/write head.
+How does optical memory storage works?
+    Light lasers read and write info into spiral tracks on disc.
+    Binary info represented by pits and lands which reflect or scatter light.
+List 3 disadvantages of CDs
+    Easily damaged (scratches)
+    Limited storage capacity
+    Relatively slow transfer speeds
+List an advantage of CDs→Very portable as they are small, thin and light.
+List 4 input devices
+    Keyboard
+    Webcam
+    Magnetic stripe reader
+    Barcode reader
+List 3 output devices
+    Speakers
+    Projectors
+    Monitor
+Explain what pits and lands are in the context of optical devices.
+    Pits - recessed parts which scatter light; represent 0
+    Lands - flat parts which reflect light; represent 1
+What are CDs used for?
+    Store small quantities of information.
+    Made to store music/audio.
+What does 'CD' stands for?→Compact disk
+What does 'DVD' stand for?→Digital Versatile Disc
+CDs, DVDs or Blue-rays holds the most data?
+    Blue-rays are the most data dense.
+    CDs are the least data dense.
+List 3 different sensor devices.
+    Accelerometer: measures forces on a device when it moves.
+    GPS: global positioning system, tracks location for navigation, maps and location-based maps.
+    Gyroscope: measures angular rotation for more precise orientation and motion tracking.
+Define 'RAM'
+    Temporary memory used while computer is running.
+    Stores data and programs that are currently in use.
+    Fast, but contents are lost when power is off (volatile).
+    Part of main memory.
+Define 'ROM'
+    Permanent memory that stores BIOS (starting instructions).
+    Cannot be changed easily
+    Not lost when power is off (non-volatile)
+    Part of main memory.
+Define 'Main Memory'
+    Refers to both RAM and ROM.
+    Memory CPU can access directly.
+    Stores data and instructions temporarily (RAM) or permanently (ROM) during operation.
+Define 'Hard Disk'
+    Long-term storage for files, software and OS.
+    Much larger than RAM/ROM but slower.
+    Non-volatile.
