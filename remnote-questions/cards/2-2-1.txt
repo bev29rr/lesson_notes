@@ -1,0 +1,100 @@
+Define 'Problem Recognition'
+    Identifying that there is a problem to be solved
+    Determine what problem is from a description
+    Determing if problem can be solved with computational methods
+Define 'Decomposition'→Splitting the problem down into subproblems that can be solved independently.
+State 3 key features of a recursive algorithm.
+    Function calls itself.
+    Each recursive call will create a new copy of the values in the function and add all of the values of the copy the the call is being made from to a stack.
+    There is a base case/condition that stops the recursive calls.
+State 3 benefits of using concurrent processing.
+    More efficient processor use.
+    Long running tasks do not delay short running tasks.
+    User is able to interact with the computer while other tasks are running.
+Explain the IDE feature: error diagnostics.
+    Used to locate and fix errors.
+    Highlights syntax errors.
+    Shows helpful messages or warnings.
+    Points to exact line with the problem.
+    Often suggests fixes.
+Explain the IDE feature: breakpoints.
+    Pause program right before a line runs.
+    Inspect variable values at that moment.
+    Understand the flow of program step by step.
+    Find logic and runtime errors.
+Explain the IDE feature: syntax highlighting.
+    Colours and styles key words and variables differently.
+    Makes code easier to read and understand.
+    Helps spot errors like typos or missing keywords (syntax errors).
+Explain the IDE feature: stepping.→Used to run the program line by line to check variable values at each stage.
+Explain the IDE feature: variable watch window.
+    View current values of variables.
+    Monitor how values change as program runs.
+    Debig by watching variable behaviour during execution.
+Explain the IDE feature: auto-complete.
+    Automatically suggests code (keywords, variables, functions) as you type.
+    Speeds up coding.
+    Reduces typos and syntax errors.
+    Helps you remember correct names and structure.
+Describe 3 benefits of using OOP rather than procedural paradigms
+    Code can easily be reused: classes can be used in other programs.
+    Easier to maintain: classes can be modified or extended.
+    Code can be more secure: access to attributes can be restricted to being via methods.
+What is meant be 'sequence' in code execution?→Code is executed line-by-line, from top to bottom.
+What is meant be 'branching' in code execution?
+    Particular block of code is run if a specific condition is met.
+    Uses IF and ELSE statements.
+What is meant by 'iteration' in code execution?
+    Set of instruction are repeated multiple time.
+    Can be either:
+        Count controlled => block of code executed certain number of times.
+        Condition-controlled => block of code executed while a codition is met.
+Define 'Scope'.
+    Where in the program a variable can be accessed.
+    Local within subroutine takes precedence over global with same variable name.
+Give four facts about local variables.
+    Can only be accessed within the subroutine in which they were defined.
+    Multiple local variables with the same name can exist in different subroutines.
+    Are deleted once subroutine ends.
+    Using local variables ensures subroutines are self-contained.
+Give four facts about global variables.
+    Can be accessed across the whole program.
+    Useful for values that need to be used by multiple parts of the program.
+    Danger of being unintentionally edited.
+    Requires more memory => not deleted until program terminates.
+Define 'Modular Programming'→Technique used to split large, complex programs  into smaller, self-contained modules.
+Why is modular programming useful?
+    Easier to divide tasks between a team and manage projects.
+    Simplifies process of testing and maintenance.
+    Each component can be dealt with individually.
+    Improves reusability of components.
+Define 'Procedures'
+    Named block of code that perform a specific task.
+    But does not return a value.
+Define 'Functions'
+    Named blocks of code that perform a specific task.
+    Which always returns at least a single value.
+How can parameters be passed into a subroutine?→Either by value or by reference.
+How is a parameter passed by value to a subroutine?
+    Copy of value is passed and discarded at end.
+    Value outside subroutine remains unaffected.
+How is a parameter passed by reference to a subroutine?
+    Address of parameter is given to subroutine.
+    Value of parameter will be updated at given address.
+What does IDE stand for?→Integrated development environment.
+Define 'IDE'→Program which provides a set of tools to make it easier for programmers to write, develop and debug code.
+State 7 features of IDEs
+    Variable watch window
+    Syntax highlighting
+    Stepping
+    Error diagnostics
+    Breakpoints
+    Auto-complete
+    Source code editor
+Define 'Variable'
+    A named storage location  in memory.
+    Holds a value which can be changed.
+Describe the difference between a 'do loop' and a 'while loop'.
+    While loop checks the condition at the start of loop, do loop does it at end.
+    Code in a while loop may never run, do loop will always run at least once.
+Give three examples of iteration.→FOR, WHILE and REPEAT UNTIL loops.

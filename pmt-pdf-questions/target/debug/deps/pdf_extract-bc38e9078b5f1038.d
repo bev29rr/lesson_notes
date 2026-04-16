@@ -1,0 +1,9 @@
+/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions/target/debug/deps/pdf_extract-bc38e9078b5f1038.d: /home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/lib.rs /home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/core_fonts.rs /home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/glyphnames.rs /home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/zapfglyphnames.rs /home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/encodings.rs
+
+/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions/target/debug/deps/libpdf_extract-bc38e9078b5f1038.rmeta: /home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/lib.rs /home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/core_fonts.rs /home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/glyphnames.rs /home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/zapfglyphnames.rs /home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/encodings.rs
+
+/home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/lib.rs:
+/home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/core_fonts.rs:
+/home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/glyphnames.rs:
+/home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/zapfglyphnames.rs:
+/home/benja/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pdf-extract-0.10.0/src/encodings.rs:

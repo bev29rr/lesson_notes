@@ -1,0 +1,55 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   0.102977864s  INFO prepare_target{force=false package_id=physics-questions v0.1.0 (/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions) target="physics-questions"}: cargo::core::compiler::fingerprint: stale: changed "/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions/src/main.rs"
+   0.102995383s  INFO prepare_target{force=false package_id=physics-questions v0.1.0 (/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions) target="physics-questions"}: cargo::core::compiler::fingerprint:           (vs) "/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions/target/debug/.fingerprint/physics-questions-d84d0fd951798845/dep-bin-physics-questions"
+   0.102998876s  INFO prepare_target{force=false package_id=physics-questions v0.1.0 (/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions) target="physics-questions"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1776246959, nanos: 385764092 } < FileTime { seconds: 1776246999, nanos: 679782073 }
+   0.103141117s  INFO prepare_target{force=false package_id=physics-questions v0.1.0 (/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions) target="physics-questions"}: cargo::core::compiler::fingerprint: fingerprint dirty for physics-questions v0.1.0 (/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions)/Check { test: false }/TargetInner { name: "physics-questions", doc: true, ..: with_path("/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions/src/main.rs", Edition2024) }
+   0.103158640s  INFO prepare_target{force=false package_id=physics-questions v0.1.0 (/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions) target="physics-questions"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions/target/debug/.fingerprint/physics-questions-d84d0fd951798845/dep-bin-physics-questions", reference_mtime: FileTime { seconds: 1776246959, nanos: 385764092 }, stale: "/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions/src/main.rs", stale_mtime: FileTime { seconds: 1776246999, nanos: 679782073 } }))
+   0.107930165s  INFO prepare_target{force=false package_id=physics-questions v0.1.0 (/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions) target="physics-questions"}: cargo::core::compiler::fingerprint: fingerprint error for physics-questions v0.1.0 (/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions)/Check { test: true }/TargetInner { name: "physics-questions", doc: true, ..: with_path("/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions/src/main.rs", Edition2024) }
+   0.107945978s  INFO prepare_target{force=false package_id=physics-questions v0.1.0 (/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions) target="physics-questions"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions/target/debug/.fingerprint/physics-questions-e7c438e0dd79579f/test-bin-physics-questions`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/core/src/ops/function.rs:284:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:589:40
+  16: std::panicking::catch_unwind
+             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:552:19
+  17: std::panic::catch_unwind
+             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:589:40
+  20: std::panicking::catch_unwind
+             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panicking.rs:552:19
+  21: std::panic::catch_unwind
+             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+    Checking physics-questions v0.1.0 (/home/benja/Documents/Obsidian Vault/lesson_notes/physics-questions)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.48s
