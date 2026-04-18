@@ -1,0 +1,47 @@
+Define Time Constant→τ=CR (define variables), where it's the time taken for the voltage to discharge 36.8% (1/e) of its initial charge
+
+State Coulomb's Law→The ELECTROSTATIC FORCE between two point charges is directly proportional to the product of their charges and inversely propertional to the square of their separation. (F=Qq/kr^2)
+Define Electric Potential and Electric Potential Energy
+    V: Work Done per unit charge to bring a POSITIVE charge FROM infinity TO that point (in the field)
+    U (Energy): Work Done to bring a POSITIVE charge FROM infinity TO that point (in the field)
+Define Electric Field→A region surrrounding a charged object (which causes a force to be exerted on it)
+Define Permitivity→The meaterial's ability to PERMIT an ELECTRIC FIELD
+Define Permeability→A material's ability to SUPPORT the FORMATION of a MAGNETIC FIELD 
+
+State Faraday's Law→The magnitude of the induced EMF is directly proportional to the rate of change of MAGNETIC FLUX LINKAGE
+State the direction of Magnetic Field Lines (in terms of force experienced)
+    North to South
+    (direction of the force on a MOVING positive charge)
+Lenz's Law→The DIRECTION of an INDUCED CURRENT is such that it OPPOSES the current that created it
+
+State the difference between Activity and Count Rate
+    Activity: The rate of decay of an isotope
+    Count Rate: The MEASURED rate of decay
+State and explain the two Reactor Components (for fission reactors)
+    Moderators (graphite)
+    ⇒ Slow down neutrons (to make fission more likely)
+    Control Rods
+    ⇒ Absorb neutrons and control the rate of reaction
+
+State the two Ultrasound Scans, and compare them
+    A-Scans
+    ⇒ 1D, precise depth measurements
+    B-Scans
+    ⇒ 2D, less precise
+State the equation relating Atenuation Coefficient and Proton Number→μ ∝ Z^3
+State the two contrast mediums, and their uses
+    Iodine: Observe blod flow
+    Barium: Observe digestion (barium meal)
+State an X-ray imaging tool and its 3 advantages/disadvantages
+    CAT Scan (works by detecting different types of attenuation)
+    ⇒ High resolution, Longer time (than A/B-scans), 
+    ⇒ Quick, Cheap
+State a Gamma ray imaging tool (with its respective tracer)
+    Gamma Camera (radioactive tracer)
+    PET Scan (positron-emitting tracer)
+State the absorbtion mechanisms of X-rays (that cause atenuation)
+    Simple: releases X-ray (1-20 keV)
+    Photoelectric Effect: releases [photo]electron (>100keV)
+    Compton Effect: releases electron and LOW ENERGY X-ray photon (0.5-5 MeV)
+    Pair Production: releases e- & e+ (>1 Mev)
+

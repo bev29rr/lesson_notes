@@ -1,0 +1,18 @@
+Define Archimedes' Principle→The upthrust of an object submerged (in a fluid) is equal to the weight of the fluid it displaces
+Define Centre of Mass→The SINGLE POINT through which the object's mass can be said to act
+Define Centre of Gravity→The SINGLE POINT through which the object's weight can be said to act
+Define Couple→Two equal and opposite parallel forces (that act on an object through different lines of action). There is no resultant force but there is rotation.
+Define Equilibrium→When the resultant force and the resultant momentum are zero.
+Define Principle of Moments→∑ anticlockwise moments = ∑ clockwise moments
+
+Define a Brittle Material→An object that shows little strain before reaching its fracture point
+Define a Ductile Material→An object that can undergo large strain (extension) before reaching its fracture point
+State the three main points on a Stress-Strain Graph
+    Yield point (proportional limit)
+    UTS (ultimate tensille strength)
+    Breaking/fracture point
+
+State Newton's 1st Law→An object will remain in motion, inert, unless affected by a resultant for 
+State Newton's 2nd Law→The sum of the forces acting on an object is equal to the rate of change of momentum.
+State Newton's 3rd Law→Every action has an equal and opposite reaction.
+

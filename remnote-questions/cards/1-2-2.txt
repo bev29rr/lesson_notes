@@ -1,0 +1,147 @@
+Define 'Abstract Syntax Tree'→Representation of the source code (syntactic structure) in the form of a tree.
+Define 'Applications Software'
+    Software designed to be used by end-user to perform one specific task.
+    Requires systems software in order to run.
+Define 'Assembler'
+    Translate Assembly code into machine code;
+    Each line of assembly code is equivalent to almost one line of machine code;
+    So, code is translated on almost a one-to-one basis.
+Define 'Assembly Code'
+    Low level language used to communicate directly with computer hardware
+    Converted to machine code using an assembler
+What is meant by 'closed source code'?
+    User must hold an appropriate license to use it.
+    Users cannot access source code as the company owns the copyright license
+Explain what is the 'code generation stage' in the context of compilation.
+    Machine code is produced.
+    Using the abstract syntax tree.
+Define 'Compiler'
+    Program which translates high level code into machine code all at once.
+    Carries out multiple checks and reports errors.
+Define 'Interpreter'
+    Translates and executes code line-by-line
+    Stop and produces error if line contains and error
+Explain 'lexical analysis' in the context of compilation stages.
+    Removes whitespaces and comments.
+    Tokenisation -> code analysed for keywords, names of variables and constants and replaced by tokens.
+    Creates a symbol table with the tokens.
+Define 'Linkers'
+    At compilation time
+    Combines code to software libraries to form a single executable file.
+Define 'Loaders'
+    At run time (of compiled files)
+    Loads the executable file into main memory (RAM) from secondary storage.
+    Also, loads any required libraries into main memory.
+What is meant by 'open source code'?
+    Code can be used by anyone without a license.
+    Code is distributed with the source code.
+Explain 'optimisation' in the context of compilation stages.
+    Last stage of compilation
+    Searches for areas in the code where it could be made more efficient.
+    Detects and removes insignificant/redundant parts of code.
+Explain 'semantic analysis' in the context of compilation stages.
+    During syntax analysis stage.
+    Computers interpret correct context of words/phrases with multiple meanings.
+    Detects logic mistakes within program.
+Define 'Source Code'→The original code written by a programmer in a high-level language.
+Explain 'syntax analysis' in the context of compilation stages.
+    Checks if tokens grammer is valid (for the rules of the programming language).
+    If not valid => flagged as syntax errors (added to errors' list).
+    Outputs an abstract syntax tree.
+Define 'Systems Software'
+    Low level software responsible for running/managing the computer's hardware.
+    Interacts with hardware to provide a platform for applications software to run.
+    User does not directly interact with it.
+What are translator programs used for?
+    Convert high-level source code into low-level object code (machine code)
+    So it is ready to be executed by computer.
+Define 'Utility Software'
+    Type of system software
+    Designed to help monitor, maintain or improve performance of OS.
+Describe the purpose of code optimisation.
+    Make code more efficient.
+    So program uses fewer resources (e.g. memory).
+What is the purpose of an antivirus as utility software?
+    Responsible for detecting potential threats
+    Will alerts user and remove the threat.
+What is the purpose of automatic updating as utility software?
+    Ensures OS is kept up to date.
+    Updates are automatically installed when computer is restarted.
+    Updates ensure system is less vulnerable to malware and hacking threats.
+What is the purpose of 'backup software' as utility software?
+    Automatically creates routine copies of specific files selected by the user at how often user wants.
+    If power failure, malicious attack or other incident happens files can be recovered.
+Explain the purpose of 'disk defragmentation tools' as utility software.
+    When hard disk becomes full it slows down because files become fragmented (stored in different part of memory).
+    Disk defragmenter utility rearranges contents of the hard drive.
+    Thus can be accessed faster - improving performance.
+Explain 2 differences between a compiler and a interpreter.
+    Compiler translates code all at once (before it is executed).
+    Interpreter translates code line by line (during runtime).
+    
+    Compiler lists all errors at the end.
+    Interpreters stop at first errror.
+Give 3 reasons why in some circumstances programmers will choose to write code in assembly language rather than high-level languages.
+    More efficient to translate
+    Makes more efficient use of CPU/memory
+    Compilers/interpreters may not be available
+List 2 disadvantages of interpreters.
+    Code must be translated every time it is run.
+    Interpreted code requires an interpreter to run on different devices.
+List 3 disadvantages of using closed source code.
+    Usually must pay for the license.
+    License restricts how many people can use the software at once.
+    Users cannot modify and improve software themselves.
+List 2 disadvantages of using open source code.
+    Support available online may be insufficient or incorrect (no user manuals).
+    Lower security as may not be developed in a controlled environment.
+List 2 drawbacks of the optimisation stage of compilation.
+    Can significantly add to the overall time taken for compilation.
+    Excessive optimisation => may alter the way in which program behaves.
+List 3 advantages of using open source code.
+    Can be modified and improved by anyone.
+    Technical support from online community.
+    Can be modified and sold on.
+List 3 advantages of using closed source code.
+    Thorough, regular and well-tested updates.
+    Company owning software provides expert support and user manuals.
+    High levels of security as developed professionally.
+List 4 examples of applications software
+    Desktop publishing
+    Word processing
+    Spreadsheets
+    Web browsers
+List 6 examples of utility software.
+    Compression software.
+    Disk defragmentation tools.
+    Antivirus/Anti-malware software.
+    Automatic updating software.
+    Backup software.
+    File repair/manager software.
+What is an advantage of using an interpreter.
+    Can run/test program line by line.
+    Making it faster to find and fix errors.
+List the stages of code compilation.
+    Lexical analysis
+    Syntax analysis
+    Code generation
+    Optimistion
+List the 3 types of translators.
+    Compiler
+    Interpreter
+    Assembler
+The two categories software can be divided in are...→Applications software and systems software
+What happens if a compiler detects any errors on the program?→Compiler will flag up the error and none of the code will be executed until error is solved
+What happens if changes need to be made to a compiled code?→Code will need to be recompiled
+What is faster 'interpreter' or 'compiler'
+    Interpreters seem faster as code is instantly executed
+    But is slower than compiled code as code must be translated each time it is executed.
+State 4 advantages of using libraries.
+    Ready to use: saves time and money developing and testing modules.
+    Makes use of other's expertise.
+    More reliable: pre-coded functions have usually been tested throughly.
+    Can be reused within multiple programs
+Define 'Library'
+    Sections of code (pre-compiled)
+    Written by other authors
+    Containing useful routines

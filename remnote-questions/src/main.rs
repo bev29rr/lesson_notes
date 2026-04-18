@@ -8,7 +8,7 @@ use rand::rng;
 use serde_json;
 use pdf_canvas::{BuiltinFont, Pdf};
 
-const QUESTION_COUNT: usize = 30;
+const QUESTION_COUNT: usize = 20;
 
 struct CardData {
     source_list: Option<Vec<u32>>,

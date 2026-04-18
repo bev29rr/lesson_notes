@@ -1,0 +1,28 @@
+Effects of increasing incident frequency and intensity (separately) in the photoelectric effec
+    ↑ Frequency: Greater kinetic energy per photon
+    ↑ Intensity: Increases the probability of photons being emitted
+Conductor and Insulator number (density) of charge carriers
+    Conductors + Superconductors: ~10x28 [m^-3]
+    Insulators: ~10^10 [m^-3]
+State Kirchoff's First Law→Σ I_in = Σ I_out (at a point) 
+State Kirchoff's Second Law→Σ V = 0 (Around a closed loop)
+Difference between EMF and Voltage
+    EMF: the energy SUPPLIED per unit charge FROM A SOURCE
+    Voltage: the energy USED per unit charge BETWEEN TWO POINTS
+Define Coherence→waves with the same FREQUENCY and CONSTANT phase difference
+List EM Spectrum, with their boundary wavelengths
+    RMIVUXG
+    (R) 1 (M) 10^-3 (I) 7x10^-7 (V) 4x10^-7 (U) 10^-8 (X) 10^-11 G  
+Define Longitudinal Waves and Transverse Waves
+    Longitudinal: Oscillations parallel to the DIRECTION OF ENERGY TRANSFER
+    Transverse: Oscillations perpendicular to the DIRECTION OF ENERGY TRANSFER
+Compare Progressive Wave vs Stationary Wave
+    Progressive: Transfers energy (from one point to another)
+    Stationary: Doesn't transfer (but stores) energy
+Define Phase Difference and Path Difference→The difference in radians/distance between two points on a wave
+Define Polarisation→When a wave is restricted to oscillate in a single plane
+Describe diffraction of electrons
+    Electron gun (thermionic emmision through a accelerating p.d)
+    λ ≈ atomic spacing
+    Fired at graphite
+    Creates concentric, circular rings (of minimas and maximas)

@@ -1,0 +1,104 @@
+Define 'Class'
+    OOP built around them.
+    A template defining methods and attributes to make objects.
+Explain 'direct addressing'.→Operand gives address which holds the value upon which instruction to be performed.
+Define 'Getters'→A method used in OOP which retrieves the value of a given attribute
+Define 'Immediate Addressing'→Operand is the actual value upon which the instruction is to be performed
+Define 'Indexed Addressing'
+    Index register used => stores certain values.
+    Final memory address = operand + index register value.
+Define 'Indirect Addressing'→Operand gives address of a register which holds another address, where data is located
+Explain the concept of inheritance in OOP.
+    A class can inherit from another class.
+    Subclass has all of the methods and attributes of the superclass.
+    Subclass can have its own additional properties.
+What is meant by 'instantiation'?
+    When classes are used to create objects.
+    Class can be used to create multiple objects with the same set of attributes and methods.
+Define 'Iteration' => programming structures
+    A block of code is executed a certain number of times or while a condition is  met.
+    Uses FOR, WHILE or REPEAT UNTIL loops.
+Define 'Object-Oriented Programming'
+    Also called OOP
+    Built on entities (objects) formed from classes which have certain attributes and methods
+    Focuses on making programs that are reusable and easy to update and maintain
+Explain 'overloading' in within the context of polymorphism.
+    A method within a subclass is redefined
+    Code is altered, it functions differently producing a different output.
+    Thus, multiple different classes which required different parameters can have the same name.
+Explain 'overriding' in the context of polymorphism.
+    Redefining a method (from parent class) within a subclass.
+    Method takes the same parameters.
+    Code of inside method is changed -> different output is produced.
+Explain the the OOP property: 'polymorphism'.
+    Objects can behave differently depending on their class.
+    Can result in same method producing different outputs depending on object involved.
+    Happens through overloading or overriding.
+Define 'Procedural Programming'
+    Most widely-used paradigms
+    Uses a sequence of instructions which may be contained within procedures
+    Instructions are carried out in a step-by-step manner
+Define 'Recursion' => programming structures
+    Functions are expressed in terms of themselves.
+    Functions are executed,  calling themselves, until a certain condition known as a base case (which  does not call the function) is met.
+Define 'Selection' => programming structures→A certain block of code is run if a specific condition is met, using IF  statements
+Define 'Sequence' => programming structures→Code is executed line-by-line, from top to bottom
+Define 'Setters'→Method that sets the value of a particular attribute
+Define “Encapsulation”
+    Bundling attributes and methods within classes.
+    Restricting direct access to the data.
+    Private attributes may only be accessed via getters/setters.
+Describe 4 advantages of using “Encapsulation”
+    Reduces the change of errors/inconsistencies.
+    Ensures objects can only be changed in the way intended.
+    Ensuring changes are consistent with how the object should behave.
+    Protecting data (can’t be changed accidentally).
+List 3 advantages of 'Procedural Programming'
+    Can be applied to a wide range of problems
+    Relatively easy to write and interpret
+    Simple to implement
+    Uses traditional data types and structures
+List 3 disadvantages of OOP
+    Different style of programming => requires alternative thinking style
+    Not suited for problems few components are reused => may be more inefficient
+    Unsuitable for smaller problems
+List 6 advantages of OOP
+    High level reusability => due inheritance and polymorphism
+    Classes used across multiple projects
+    Encapsulation => code more reliable; protects attributes from being directly accessed
+    Advance planning required => thourough design =>higher-quality piece of software thus fewer vulnerabilities
+    Modular structure => easy to maintain/update
+    High-level abstraction => saves time & effort
+List a disadvantage of 'Procedural Programming'→Not possible to solve all kinds of problems => may be inefficient
+State 2 drawbacks of Round Robin
+    Inefficiently split up in multiple cycles - Longer jobs take a much longer time for completion
+    Does not take into account job priority
+State the 4 programming structures used in 'Procedural Programming'
+    Sequence
+    Selection
+    Iteration
+    Recursion
+What is OOP useful for?→Applicable to certain types of problems with lots of reusable components which have similar characteristics
+Where is 'Procedural Programming' useful?→Suited to problems that can easily be expressed as a series of instructions using constructs.
+Why are getters and setters used?→To make sure attributes cannot be directly accessed and edited by users.
+Why use “Direct Addressing”?
+    Fast
+    Simple for fixed addresses, such as those holding static data structures.
+    Addressable range limited by operand size.
+Why use “Immediate Addressing”?
+    Fastest
+    Useful for small constants, which are hard-coded and fit in the number of bits available for the operand
+Why use “Indexed Addressing”?→Useful for iterating through all items in an array by incrementing the value in the index register.
+Why use “Indirect Addressing”?
+    Slowest
+    Ideal for dynamic data structures such as lists as the address can be changed.
+    Extends the addressable range.
+What is 'indexed addressing' useful for?→Accessing elements in arrays or lists.
+What are the main features code of a constructor method?
+    public procedure new (nItemName)
+    itemname = nItemName
+What does inheritance allows to be done in OOP?→Allows to effectively reuse certain components and properties while making some changes.
+Explain 'overriding' in the context of class inheritance.
+    Child class inherits a method.
+    Method has the same name, parameters and return type.
+    But the behaviour of the method is changed.

@@ -1,0 +1,124 @@
+Explain the agile methodology.
+    Problem is broken down into sections which are developed in parallel.
+    Uses prototypes ⇒ improved in iterative manner.
+    Less focus on documentation ⇒ priority to user satisfaction.
+Define 'Alpha Testing'
+    Carried out in-house ⇒ software development teams within company.
+    Bugs are pinpointed and fixed.
+Define 'Beta Testing'
+    Carried out by end-users
+    After alpha testing
+    Feedback from users ⇒ informs next stage of development
+Define 'Black Box Testing'
+    Carried out within company or by end-users
+    Software tested without testers being aware of software's internal structure
+    Test plan traces through inputs and outputs within software
+Define 'Extreme Programming'
+    An agile model ⇒ development team consists of a pair of programmers alongside a representative end-user.
+    Programmers don't work longer than 40 hours a week ⇒ quality is not compromised.
+    Regular code reviews.
+    System requirements specified by end-user.
+    Each cycle generates a 'working version' of program ⇒ could function as final product.
+Define 'RAD'
+    Rapid Application Development
+    Iterative methodology ⇒ uses partially functioning prototypes which are continually built-upon.
+    User requirements gathered using focus group
+    'Incomplete' version is developed => ‘good enough’ within time limit rather than perfect.
+    Given to user to trial ⇒ feedback used to generate the next
+    Continues until prototype matches user requirements ⇒ becomes final product
+Define 'Spiral Model'
+    Four key stages with focus of effectively managing risk-heavy projects:
+    Analysing system requirements (gather requirements up front).
+    Pinpointing and mitigating risks
+    Development, testing and implementation
+    Evaluating to inform next iteration
+    Client feedback at end of each iteration
+    https://remnote-user-data.s3.amazonaws.com/WYZHghZvhrQjQCjOYpq_IZn2LpO5Were6d_7OBXSZv2DfL_cDHAkIQHJV_591-HrCl_8SBiZJfY1eGQFto4xMHoHMjkokvdybwkOm3Al0IlFZJULxZvicy-Rc-LnNl0S.jpeg
+        If project is too risky at any point ⇒ project termination
+Define 'Waterfall Lifecycle'
+    Series of stages completed in sequence from start to finish.
+    https://remnote-user-data.s3.amazonaws.com/_qv3jq53YtyM17BdU73iub_nWkstSb7Qe1XRf-EXUcDIQXyyrPuFqKWcjz4ELlOeJW4P-NiVbJVq-wFF5YoD3EMyIL44s_uHtwI5nLGDkRDaujSMji1yswC-dp6Yf2f5.jpeg
+    Very inflexible model
+    
+    Gather all requirements up front
+    Design everything carefully
+    Focus on delivering initial requirements
+    Then build it
+Define 'White Box Testing'
+    Carried out by software development teams
+    Test plan based on internal structure of program
+    All possible routes through program are tested
+During 'Analysis' how can requirements be defined?
+    Analysing strengths and weaknesses of current way of problem being solved
+    Considering types of data involved ⇒ inputs, outputs, stored data, amount of data
+List 2 advantages of the 'Extreme Programming'
+    Produces high quality code
+    Constant user involvement means high usability
+List 2 advantages of the 'Waterfall Methodology'
+    Straightforward to manage
+    Clearly documented
+List 2 disadvantages of the 'Agile Methodology'
+    Poor documentation
+    Requires consistent interaction between user and programmer
+List 2 disadvantages of the 'RAD Methodology'
+    Poorer quality documentation
+    Fast pace may reduce code quality
+List 3 advantages of the 'Agile Methodology'
+    Produces high quality code
+    Flexible to changing requirements
+    Regular user input
+List 3 advantages of the 'RAD Methodology'
+    Caters to changing user requirements
+    Highly usable finished product
+    Focus on core features => reduces development time
+List 3 advantages of the 'Spiral Methodology'
+    Thorough risk-analysis and mitigation
+    Caters to changing user needs
+    Produces prototypes throughout
+List 3 disadvantages of the 'Extreme Programming
+    High cost of two people working on one project
+    Teamwork is essential
+    End-user may not be able to be present
+List 3 disadvantages of the 'Spiral Methodology'
+    Expensive to hire risk assessors
+    Lack of focus on code efficiency
+    High costs due to constant prototyping
+List 3 disadvantages of the 'Waterfall Methodology'
+    Lack of flexibility
+    No risk analysis
+    Limited user involvement
+State 4 criteria considered during 'Evaluation'
+    Robustness
+    Reliability
+    Portability
+    Maintainability
+What are the 7 common stages for SDLCs?
+    Analysis
+    Design
+    Development
+    Testing
+    Implementation
+    Evaluation
+    Maintenance
+What does 'SDLC' stands for?→Software Development Life Cycles
+What happens if a change needs to be made within a project being developed using the 'Waterfall Model'?→Programmers must revisit all levels between current stage and stage at which a change needs to be made.
+What is the aim of paired programming in 'Extreme Programming'?
+    Produce high quality code
+    Code is written by one person and critiqued by the other ⇒ improved as it is written.
+Where is 'Extreme Programming' useful?
+    Small to medium projects
+    With unclear initial requirements requiring excellent usability
+Where is 'RAD Methodology' useful?
+    Small to medium
+    Low-budget projects
+    With short time-frames
+Where is 'Spiral Methodology' useful?
+    Large, risk-intensive projects
+    With high budget
+Where is the 'Agile Methodology' useful?
+    Small to medium projects
+    With unclear initial requirements
+Where is the 'Waterfall Methodology' useful?
+    Static, low risk projects
+    Which need little user input
+    Eg. general-purpose software

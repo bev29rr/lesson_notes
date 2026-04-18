@@ -1,0 +1,19 @@
+Define precision→a measure of how far from the MEAN the data lies 
+Define accuracy→a measure of how close the measurement is to the TRUE value
+Define resolution→the smallest change (in the measured quantity) that produces a perceptible change in the reading
+Compare repeatable vs reproducible
+    Repeatable: the experiment can be repeated by the SAME person/apparatus
+    Reproducible: the experiment can be repeated with a DIFFERENT person/apparatus
+Define Random Errors (and how to mitigate)
+    UNPREDICTABLE VARIATION between measurements (from the true value)
+    Can be reduced by taking repeat measurements
+Define Systematic Errors (and how to mitigate)
+    FIXED VARIATION between measurements (from the true value)
+    Can be reduced by using a different technique/apparatus
+Define Zero Errors (type of error and description)
+    Systematic Error
+    When a measuring instrument does not read 0
+What is a Parallax Error (type of error and description)
+    Systematic Error
+    When the measurement is viewed AT AN ANGLE
+

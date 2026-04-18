@@ -1,0 +1,49 @@
+Avogadro's Constant / Moles equations
+    N_A = N/n 
+    n = m/M (M is the mass of 1 mole)
+State the equations for Charles', Boyle's and Gay Lussac's Laws
+    Boyle's Law: p ∝ 1/V   (T is constant)
+    Charles' Law: V ∝ T   (p is constant)
+    Gay Lussac's Law: p ∝ T (V is constant)
+Define Internal Energy→Sum of the kinetic energies and potential energies of particles in a given system
+Define Specific Heat Capacity→The temperature required to raise 1 kg of a substance by 1 K
+Define (Specific) Latent Heat→The temperature required to change the state (of 1kg) of a substance WITHOUT changing temperature
+
+Name the type of oscillator where frequency is independent of amplitude→Isochronous Oscillator
+Define Damping and state Types of Damping (with a short description)
+    Definition: The DISSIPATION OF ENERGY, causing the amplitude to decrease
+    Overdamping: It takes a long time to return to the EQUILIBRIUM position
+    Critical Damping: It restores the EQUILIBRIUM position without oscillating
+    Underdamping: Energy is gradually released, oscillating through the EQUILIBRIUM
+Conditions for SHM
+    Acceleration is directly proportional,
+    and in the opposite direction, to its direction a = -ω^2 x 
+
+Define Escape Velocity→Minimum speed for an object to COMPLETELY leave a GRAVITATIONAL FIELD
+Define Geostationary Satellite
+    Satellitel in a circular orbit ABOVE THE EQUATOR
+    24-hour Time Period
+State Kepler's First Law→All planets move in ELLIPTICAL ORBITS around the Sun, with the Sun AT (one of) THE FOCI point
+State Kepler's Second Law→A line segment joining a planet and the Sun sweeps out EQUAL AREAS in EQUAL TIME PERIODS
+State Kepler's Third Law→T^2 ∝ r^3 (define variables)
+State Newton's Law of Gravitation→F = -GMm/r^2 (describe each variable)
+
+Define Absorption and Emmision spectrum [comment: (cooler/hotter gas desc.)]
+Define a Star→Sphere of hydrogen that produces energy (via nuclear fusion)
+Define a Parsec→Distance at which 1 AU subtends an angle of 1 arcsecond
+Define an Astronomical Unit→AVERAGE DISTANCE between the Sun and the Earth
+State the Cosmological Principle→The universe is isotropic and homogeneous (on large scales)
+Define Electron Degeneracy Pressure→The outwards force, that opposes gravity, caused my multiple electrons not being able to occupy the same state
+Define the Dopper Effect→Apparent change in frequency of a wave due to RELATIVE MOTION BETWEEN source and observer
+Explain what is Dark Energy→Energy responsible for the (accelerating) expansion of the universe
+Properties of a Black Hole (name 2)
+    Strong gravity
+    Event horizon
+    Escape velocity exceeds speed of light
+    Central singularity
+Define stellar parallax→Apparent shift in a star's position, RELATIVE TO OTHER START, due to Earth's orbit around the sun
+State the Big Bang Timeline
+    10^-35s: photons and EM radiation
+    10^-6 - 1s: Mass is created
+    400,000 years: first atoms
+    30 mil years: first stars
