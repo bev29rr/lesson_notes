@@ -19,6 +19,8 @@ Modify card-data.json:
 }
 ```
 
+Note: sources starting with 1 and 2 are Computer Science. Sources starting with 3 are Physics
+
 Credits to Geo for creating these. Code mostly generated using Copilot.
 
 ## Further Maths Modelling with Algorithms (Mostly Complete)
