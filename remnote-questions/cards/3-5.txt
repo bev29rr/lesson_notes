@@ -8,6 +8,12 @@ State the equations for Charles', Boyle's and Gay Lussac's Laws
 Define Internal Energy→Sum of the kinetic energies and potential energies of particles in a given system
 Define Specific Heat Capacity→The temperature required to raise 1 kg of a substance by 1 K
 Define (Specific) Latent Heat→The temperature required to change the state (of 1kg) of a substance WITHOUT changing temperature
+State the Ideal Gas conditions
+    Particles have negligible volume – The gas molecules are so small that their own volume can be ignored compared to the container’s volume.
+    No intermolecular forces – There are no attractions or repulsions between particles.
+    Elastic collisions – Collisions between gas particles and with container walls are perfectly elastic (no energy loss).
+    Constant, random motion – Gas particles move in continuous, random straight-line motion.
+    Temperature is proportional to kinetic energy – The average kinetic energy of particles depends only on the absolute temperature (in kelvins).
 
 Name the type of oscillator where frequency is independent of amplitude→Isochronous Oscillator
 Define Damping and state Types of Damping (with a short description)
@@ -28,7 +34,9 @@ State Kepler's Second Law→A line segment joining a planet and the Sun sweeps o
 State Kepler's Third Law→T^2 ∝ r^3 (define variables)
 State Newton's Law of Gravitation→F = -GMm/r^2 (describe each variable)
 
-Define Absorption and Emmision spectrum [comment: (cooler/hotter gas desc.)]
+Define Absorption and Emmision spectrum
+    Absorption: Dark lines caused when a COOLER gas absorbs specific wavelengths from the CONTINUOUS spectrum
+    Emmision: Bright lines caused when a HOTTER gas emits specific wavelengths 
 Define a Star→Sphere of hydrogen that produces energy (via nuclear fusion)
 Define a Parsec→Distance at which 1 AU subtends an angle of 1 arcsecond
 Define an Astronomical Unit→AVERAGE DISTANCE between the Sun and the Earth

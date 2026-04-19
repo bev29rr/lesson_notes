@@ -1,0 +1,127 @@
+Define '1 to 1 Entity Relationship'
+    Each entity can only be linked to one other entity
+    Eg.  relationship between a husband and wife.
+    The husband entity can only be  associated with one wife entity and vice versa.
+    Demonstrated using  a single line used to connect two entities.
+    https://remnote-user-data.s3.amazonaws.com/DPh0MJ2pa9ZRHF42LmHkQZsUt30QNlBDkB9JkM6n2UVBEY_2paP_-x3gnqJzNi4LKXOmqQxo52NInKdJE4GziMaFYc_M7gnPhsTf6HpT0tGGiJ-I8Y_NXaeZ-WSm5zVV.jpeg
+Define '1 to Many Entity Relationship'
+    One table can be associated with many other tables
+    Eg. a  mother having multiple children.
+    Similarly, multiple child entities can be linked to the  same mother entity.
+    Demonstrated by a branch on  one side
+    https://remnote-user-data.s3.amazonaws.com/04kZRaZ4ScCrOMFaveKnl1QDm2gycwTRgOoXfzYcUy6JBIiLN5cYRSY5UWsNJv4PUr42bFUZ-4tXR1cbIChd8aX4r7PFwVL60lVa9PEBOngpVIs2peuTvdw_7FaLsjNp.jpeg
+Define 'Atomicity' (ACID)→A transaction must be processed in its entirety or not at all
+Define 'Consistency' (ACID)→A transaction must maintain the referential integrity rules between linked tables
+Define 'Durability' (ACID)→Once a transaction has been executed it will remain so regardless of the  circumstances surrounding it, such as in the event of a power cut.
+Define 'First Normal Form'→There must be no attribute that contains more than a single value.
+Define 'Flat file database'
+    Stores data in a single table (file).
+    Often in a plain text file.
+    Each line will hold a single record.
+    Delimeters such as commas are used to separate this into different fields.
+    Usually based around a single entity and its attributes
+    Eg.
+    https://remnote-user-data.s3.amazonaws.com/mNoHqllih0HJupP9gf2NAB-bMzOsIuQiqd-v-RQvzTXqA4tsAfInJm-mxZIX9zPi-cDX0hGfZAUzuyvm8xzNOi1ypGyfT7Om97h4rS8gGgZJJke1BhvhG3K451UH1BMf.jpeg
+Define 'Foreign Key'
+    A field that links to a primary key in a second table.
+    Shown using asterisk (*)
+Explain indexing in databases with relation to using primary and secondary keys for data retrieval.
+    Technique used to speed up searching/data retrieval in a database.
+    Maps position of each record  to a certain attribute.
+    
+    Examples:
+        Primary key is automatically  indexed, but almost never queried since it is not normally  remembered.
+        This is why secondary keys are used. Secondary keys are indexed to make  the table easier and faster to search through on those particular attributes.
+Define 'Isolation' (ACID)→Simultaneous executions of transactions should lead to the same result as if they  were executed sequentially.
+Define 'Many to Many Entity Relationship'
+    One entity can be associated with many other entities and the same  applies the other way round.
+    Eg. students and courses => each student  can enrol in more than one course and each course can have more than one  student.
+    Demonstrated by branches on both sides.
+    https://remnote-user-data.s3.amazonaws.com/lzzWQepIRukX3310d6SbVp93txrK4hRr-pra9cFVOSgSkU9bS1Cokpm1tQ3KCB9DCQdzy_NY4MkwwgMY-csd912TO7ZLPldNlwTQdp5P3JXMIwyqGQBRu-6V4znp4HBH.jpeg
+Define 'Normalisation' (databases)
+    Process of coming up with the best possible layout for a relational database
+    
+    Tries to accomplish the following things
+        No redundancy => unnecessary duplicates
+        Consistent data throughout linked tables
+        Records can be added and removed without issues
+        Complex queries can be carried out
+Define 'Primary Key'
+    Unique identifier for each record in a table
+    Unique field of a table - normally the ID
+    Shown by  underlining  it
+Define 'Record Locking'
+    Process of preventing simultaneous access to records in a database
+    Used in order to prevent inconsistencies or loss of updates
+    While one person is editing a record => this 'locks' the record to prevent others from accessing the same record.
+Define 'Redundancy' in the context of databases.
+    Unnecessary duplication of data in database
+    There are 2+ copies of the data in physically different locations.
+Explain what is meant by 'referential integrity' and how it is achieved.
+    Database/relationships are consistent.
+    Ensures info is not removed if it is required elsewhere in a linked database.
+    If two databases are linked => one of the tables cannot be deleted.
+Define 'Relational Database'
+    Stores data in multiple different tables.
+    Which are linked together using relationships created by primary and foreign keys.
+Define 'Second Normal Form' (normalisation)
+    Must be in first normal form.
+    Database doesn’t have any partial dependencies.
+    Thus, no attributes can depend on part of a  composite key.
+Define 'Secondary Key'
+    Not unique like primary key.
+    Used for searching (if primary key does not work) or sorting data in database.
+    Can have duplicate values.
+Define 'Third Normal Form' (normalisation)
+    Database must...
+        Be in second normal form.
+        Contain no non-key dependencies.
+Define 'Transaction Processing'
+    Transaction => a single operation executed on data
+    Collection of operations can sometimes be considered a transaction
+Explain how record locking can be used to ensure that the ACID principle of isolation is achieved when carrying out multiple transactions.
+    Outcome of concurrent transactions is the same as if the transactions where completed sequentially.
+    Record locking allows one user to access/modify record level data one at a time.
+    So data being used elsewhere cannot be modified.
+Give 2 benefits of using flat files databases instead of relational databases.
+    Easy to set up as only one table is needed.
+    All records are stored in one place.
+Give 2 drawbacks of using flat files databases instead of relational databases.
+    Tables can contain lots of redundant data which inscreases the amount of storage space needed.
+    Searching the database can be slower as there is more data to search.
+    The database can be more difficult to manage and possibly expand in the future.
+Give 3 drawbacks of using relational databases over flat file databases
+    Generally more difficult to set up - need more technical knowledge to do things like normalisation.
+    Data is spread out between multiple tables.
+    Some tables may be link tables which only display key fields
+    More expensive as you will need a DBMS rather than just a basic file.
+Give 4 benefits of using relational databases over flat file databases
+    Less info duplication - less redundant data which can reduce file size.
+    Database is easier to manage and expand in the future.
+    Searching database may be faster - not all tables need to be searched.
+    Can be more secure - different tables means different people ould have different access.
+What are the three 'levels' of database normalisation?
+    First normal form
+    Second normal form
+    Third normal form
+What are the 3 types of entity relationships?
+    One-to-one
+    One-to-many
+    Many-to-many
+What does 'ACID' stands for?
+    Atomicity
+    Consistency
+    Isolation
+    Durability
+What does it mean for a database to have 'no non-key dependencies'?→Attribute only depends on the value of the primary key and nothing else.
+What is the biggest problem with 'Record Locking'?
+    Deadlock
+    
+    Eg.
+        User 1 accesses Customer 1’s record and as a result locks Customer 1’s record.
+        Simultaneously User 2 accesses Customer 2’s record and as a result locks  Customer 2’s record.
+        Now User 1 tries to access Customer 2’s record, and User 2 tries to access  Customer 1’s record.
+        User 1 waits for Customer 2’s record to be free and User 2 waits for Customer 1’s  record to be free and as they are both waiting, there is no progress causing a  deadlock.
+Why could redundancy in databases be desirable?
+    If there is any damage to one copy the others will remain unaffected and can be recovered.
+    Some information is very important and people and companies cannot afford to lose this information.

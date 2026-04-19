@@ -1,0 +1,275 @@
+Client or server side? Applying CSS styles to a website→Client side
+Client or server side? Loading the website HTML code→Client side
+Client or server side? Running JavaScript code to check that all required information is entered in an online form.
+    Client side
+    However, it is dilligent to recheck at server side
+Client or server side? Running queries on the database to check if an item is available in stock→Server side
+Define 'API'
+    Set of protocols that govern how two applications should interact with each other
+    Sets out format of request and response between client and server
+    Enables app to make use of the other's services
+Define 'bandwidth'→The range of frequencies that a communication medium is capable of transmitting
+Define 'client-server networks'
+    Terminals (clients) connected to a server (central computer).
+    Server provides acces to resource/service.
+    Clients can request to use server
+Define 'Data Packets'
+    Manageable chunks of data
+    Contain header and payload => body of data being sent
+    Trailer => error detection
+Define 'DNS'
+    Domain Name System
+    System used to name and organize internet resources
+DELETE
+    All processing and storage is done by server
+    All required from thinnest-client computer is very basic machine with very little processer power and no storage
+Define 'encryption'→Way of keeping data secure when transmitting it over the internet by making it unreadable if it is intercepted.
+Define 'Firewall'
+    Piece of software or hardware
+    Filters traffic coming in and out of a network.
+    To prevent unauthorized access to a network
+Define 'Gateway'
+    Connects different types of network.
+    Translates protocols from one network to another.
+Define 'Hub'→Receives data from a device and broadcasts it to all devices connected to it.
+Define 'IP Address'
+    Internet Protocol
+    Unique address assigned to a network device
+Define 'local area networks'
+    LAN
+    Network spread over a small geographical area (single site: school)
+    Private ownership controls it
+    Fast but short distance
+Define 'MAC Address'
+    Media Access Control Address
+    48-bit value coded into device by manufacturer; identify device
+    12 digit hexadecimal number
+Define 'MAC'→Media Access Control
+Define 'Modem'→Changes a signal from digital to analogue.
+Define 'Network'→Two or more computers connected together with the ability to transmit data between each other
+Define 'peer-to-peer' (Network)
+    No central server
+    Network where computers are connected to each other so that they can share files
+    Each device acts as both server and client - can provide and request resources
+Define 'Protocol'→Set of rules for communication of data between devices.
+Define 'proxy server'
+    Acts as an intermediary goes between end-user and web pages, collects and sends data on behalf of user.
+    Intercepts all packets entering/leaving network - hides true network addresses of source from recipient
+    May serve thousands of users
+Define 'Routers'
+    Connects 2+ networks together
+    Assign IP address to devices (creates own LAN)
+    Examines data packets and forwards them
+Define 'socket address'→The combination of IP address (source and destination) and port number of port being used for communication.
+Define 'Switch'
+    Join devices together on a LAN.
+    Receives data and forwards it to the intended recipient.
+    Routes based on MAC addresses.
+Define 'URL'
+    Uniform Resource Locator
+    Full address of an internet resource
+Define 'virus'
+    Malware
+    Self replicates by spreading copies of itself when host files are opened
+    Most become memory resident; uninfected files becomes infected when copied into memory
+Define 'web crawlers'
+    Collect info about websites to build web index search engines rely on
+    Different search engines use own web crawlers
+Define 'wide area network'
+    WAN
+    Network spread over a large geographical area
+    Communicate between sites
+    May be owned by an organization; relies on third party carriers
+    Eg. large companies with multiple offices
+Define 'worm'
+    Malware
+    Sub-class of a virus; self-replicates by spreading copies of itself without user intervention
+Define a network interface card (NIC)
+    Usually built into device.
+    Gives each device a MAC address (unique ID).
+    Allows a computer system to interface with a network.
+Define wireless access point (WAP)
+    Allows wireless devices to communicate with each other.
+    Sends and receives radio waves.
+    Examines data packets and forwards them.
+Explain 'Application Layer' (protocol layering)
+    At the top of the stack
+    Uses protocols relating to the application being used to transmit data over a network
+    If app is a browser => protocol selected would be one like HTTP, POP3, FTP
+Explain 'Circuit Switching'
+    Direct link is create between two devices to allow communication
+    Maintained throughout entire conversation
+    Requires two devices to transfer and receive data at same rate
+Explain 'client-side processing'
+    Data is processed on clients' computer; not on server
+    
+    May happen because:
+    Client computer may have specific software to process info
+    Lighten load on server's processor
+Explain 'firewall'
+    Separate computer containing 2 NICs
+    One connected to internal and other to external network
+    Using special firewall software: firewall passes packets between NICs and compares against preconfigured rules (packet filters)
+Explain 'Link Layer' (protocol layering)
+    The connection between network devices; adds MAC address identifying Network Interface cads of source and destination computers
+    For devices within same network, destination MAC address is address of recipient computer. Otherwise, it will from the router
+Explain 'Network Layer' (protocol layering)
+    Adds source and destination IP addresses
+    Router operate in this layer; uses IP addresses to forward packets
+    Sockets (IP + port) used to specify which device the packets must be sent to and the application being used on that device.
+Explain 'Packet Switching'
+    Data is communicated using packets across a network
+    Through most efficient route; vary for each packet
+    May be out of order => delayed due network congestion
+Explain 'server-side processing'
+    Server process enormous data volume on behalf of multiple clients
+    Process faster than client's computer
+Explain 'trailer' (data packets)
+    Check sum or cyclic redundancy check (CRC)
+    Trailer contains code used to detect whether any errors have occurred during transmission
+Explain 'Transport Layer' (protocol layering)
+    Uses TCP to establish end-to-end connection between source and recipient computer
+    Splits data up into packets; label with packet number, total number of packets original data was split into and port number used for communication
+    If packets get lost, transport layer requests retransmissions of lost packets
+Explain how 'gateways' work (networks hardware)
+    Remove header data from packet
+    Raw data is left; new is added.
+Explain how 'web crawlers' work
+    Transverse internet web page by web page using links on websites
+    Collect keywords and add info to index
+    Collect meta data (data about the data)
+Explain the automated process that happens after you enter a domain address on your browser
+    Domain name is sent to DNS servers
+    DNS servers maps domain to an IP address
+    If DNS server can't resolve, passes request to another DNS server
+    DNS server sends IP address to browser; retrieves website from server
+List 2 advantages of 'client-side processing'
+    Lighten load of server's processor
+    Improve security; avoid unnecessary data transfer
+List 3 advantages of 'thick-client'
+    Robust, reliable, provides greater up-time
+    Can operate without continuous connection to server
+    Generally better for running more powerful software applications
+List 3 advantages of a 'thin client'
+    Easy to set up, maintain and add terminals
+    Software updates done on server; automatically distributed to client's terminals
+    Security: data is all kept centrally in one place
+List 3 advantages of a Client-Server
+    More Secure: data is stored in one location
+    No need for individual backups are central backups are carried out
+    Data and resources can be shared between clients
+List 3 disadvantages of 'thin clients'
+    Reliant on server: server down; terminal loses functionality
+    Expensive: required powerful server
+    Server demand; bandwidth increased
+List 3 disadvantages of Client-Server
+    Relatively expensive to set up
+    Functionality of terminals depends on server; causes fall in performance
+    Trained staff are required to maintain server
+List 3 types of malware
+    Worms
+    Trojans
+    Viruses
+List 4 advantages of  'Circuit Switching'
+    Data arrives in logical order; quicker reconstruction of data
+    Real-time communication; no delays in speech.
+    Guaranteed bandwidth
+    Predictable performance (because bandwidth is reserved; no resource competition)
+List 4 advantages of 'Packet Switching'
+    Efficient bandwidth use: shared among users; resource allocated when data needs to be transmitted
+    Scalable; can handle large amounts of traffic on network
+    Multiple routes available between devices: one breaks, other is used.
+    Packets can be transferred over very large networks to allow communication globally
+List 4 advantages of using proxies.
+    User privacy is protected; remain anonymous
+    Faster to load as proxy server can cache frequently used website data
+    Reduce overall web traffic
+    Admins can use it to prevent access to sensitive/irrelevant info at a site
+List 4 disadvantages or Peer-to-peer
+    Impossible to trace file origin
+    Backups must be performed separately
+    Poorer security
+    May be difficult to locate resources
+List 5 advantages of Peer-to-peer
+    Cheaper to set up
+    Allows users to share resources
+    Easy to maintain
+    Not dependent on central server
+    Specialist staff are not required
+List 5 disadvantages of 'circuit switching'
+    Inefficient bandwidth use: reserved even when not sending data
+    Limited scalability => finite circuit number => finite simultaneous calls
+    Devices must transfer and receive data at same rate
+    High cost: requires hardware
+    Ties up sections of network which cannot be used by other data until transmission has been completed
+List 5 disadvantages of 'packet switching'.
+    Higher latency: routed through multiple nodes (delay)
+    Packet loss: congestion on network may cause errors in transmission
+    Unsuitable for real-time communication, because of packet loss
+    Time is spent deconstructing and reconstructing data packets
+    Must wait for all packets to arrive before data can be received
+List the 4 layers TCP/IP is divided into
+    Application
+    Transport
+    Network
+    Link
+Name 4 examples of protocols
+    HTTP
+    TCP/IP
+    POP3
+    FTP
+What are the 2 techniques networks use for exchanging data?
+    Circuit switching
+    Packet switching
+What are the 3 phases of circuit switching?
+    Connection establishment
+    Data transfer
+    Connection released
+What are the two main types of network?
+    Local area
+    Wide area
+What does 'Packet Filtering' do?
+    Limits  network access according to admin rules/policies
+    Examines IP (source and destination) and protocols used and requested ports
+    If they match admin's 'permitted' list they are accepted
+What does 'thickness' of a client computer mean?
+    Refers to level of processing and storage that it does compared with the server it is connected to
+    The more processing and storage the server does => the thinner the client
+What happens if CRC total differs
+    Cyclical redundancy check
+    Packet is refused with suspected data; new copy is requested
+What happens when firewall denies access?
+    Packet is either dropped or rejected
+    
+    Dropped: no sent alert
+    Rejected: sends alert to sender to notify of the error
+What info does URL contain?
+    Method
+    Host
+    Location
+    Resource
+What information does data packets headers hold?
+    Sender and recipient IP address
+    Protocol being used
+        Order of the packets (e.g. 1 of 8)
+    Time to Live/ Hop Limit => tells packets when to expire so that it does not travel forever
+What is 'HTTP'?
+    Hypertext Transfer Protocol
+    Used for web page rendering, an encrypted version 'HTTPS' (Secure) is becoming more common
+What is 'POP3' and 'IMAP'?
+    Post Office Protocol and Internet Message Access Protocol (email protocols)
+    POP3: Retrieves emails from mail server; transfer to your computer; deleted from server
+    IMAP: keep emails on sever; maintain synchronicity between devices
+What is 'TCP/IP'?
+    Transmission Control Protocol/ Internet Protocol
+    The protocol stack is set networking protocols that work together as four layers
+    Packets passed up and down layers during communication
+What is malware designed to do?→Cause inconvenience, loss or damage to programs, data or computer systems.
+What is meant by 'payroll' (data packets)→Raw data to be transmitted
+What is the largest WAN?→The internet
+What is the role of the DNS server?→Translate the domain names into IP addresses when we wish to access a website.
+Where are peer-to-peer networks often used?→Piracy: as it is almost impossible to trace file's origins
+Why are protocols important on a network?
+    Sending system has no direct control over the way the receiving system responds.
+    Allows standardisation as different devices have different OS/hardware.
+    Protocols allow for data to be exchanged in a predictable way/correct format.

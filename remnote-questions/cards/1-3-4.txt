@@ -1,0 +1,64 @@
+Define 'CSS'
+    Cascading style sheets
+    Language used to describe the style of a webpage
+Define 'HTML'
+    Language web pages are written in
+    Allows browser to interpret and render webpage by describing the structure and order of it
+Define 'internet registrar'
+    Companies that hold records of:
+        All existing website names
+        Domains available for purchase; act as resellers for domain names
+Define 'internet registries'
+    Five global organizations; continents
+    Have worldwide databases with info about domains and owners
+    Allocate IP addresses
+    Keep track of what IP is associated to which domain (part of DNS)
+Define 'Javascript'
+    Language which primarily exists to add interactivity to websites
+    Often used to validate input data on client computer
+    Interpreted: web pages are interpreted by browser each time they are loaded
+Define 'meta tag'
+    Meta tags and descriptions are a list of keywords/concise phrases specified by the website owner that are built into each page
+    Defined within HTML (<head>)
+Define 'PageRank'
+    Popularity contest between pages
+    Affected by: number of votes; inbound links received; weighting to give more importance to some votes
+Define 'search engine'
+    Program that searches through a database of internet addresses looking for resources based on criteria set by client
+    Relies on index of web pages
+Explain 'search engine indexing'
+    Search engines rely on database/index of web pages
+    Web crawlers/spiders are used to build index
+Give 2 advantages of using an external CSS style sheet
+    Easier to maintain consistency across pages in a website
+    Content and formatting are kept separate
+How are audio files lossy compressed?→Very high or very low frequencies are removed as they are least noticeable to the ear.
+How does the 'weighting' of PageRank works?→Swayed by number of outbound links a site has or importance of a site
+How is a style sheet added to a HTML document?→<link href= "nameofstylesheet.css" rel="stylesheet" type="text/css">
+Internal/embedded vs External CSS
+    Internal/embedded: placed inside style tags in HTML document
+    External: separate document; link to style sheet is added to HTML document
+List 3 advantages of using JavaScript
+    Local computer can deal with invalid data before sent off to the servers
+    Eases load on busy servers
+    Reduces web traffic
+What are factors that affect search results position?
+    Keywords in <title>
+    Age of website; last update
+    Relevancy of <h1> keywords
+    Relevancy of domain name to the content
+What are PageRank algorithms?
+    Rank webpages to determine order they are displayed when search is conducted
+    The higher the rank the higher up it will be
+What are the two factors that determine a page rank?
+    How many incoming links it has from other web pages
+    Page ran of web pages that link to it
+What are the two sections of a webpage?
+    Body: contains the content of webpage
+    Head: contains title of webpage
+What does having a high PageRank mean to a website?
+    Website with good reputation and high PageRank will have a higher weighting assigned to its 'votes'
+    Total vote is shared/diluted amongst all of sites it links to
+What is the difference between .classes and #identifiers
+    Classes can be applied to more than one element in a page e.g. <p>, <h1>
+    Identifiers must be unique to every webpage e.g. <body>

@@ -1,0 +1,73 @@
+Define 'Asymmetric Encryption'
+    Two keys are used: public and private key (key pair)
+    Public key => published anywhere
+    Private => must be kept private
+    
+    Single key cannot be used to both encrypt and decrypt communication
+    Message encrypted with recipient's public key => decrypted with recipient's private key
+Define 'Dictionary Encoding'
+    Method lossless compression
+    Frequently occuring pieces of data are replaced with an index
+    Compressed data is stored alongside a dictionary which matches the frequently occuring data to an index
+    Original data can be restored using the dictionary
+Define 'Encryption'
+    Keep data secure when it's transmitted
+    Data is scrambled before it's transmitted
+    Deciphered once it arrives at its destination
+Define 'Hash Table'
+    Data structure which holds key-value pairs
+    Used to lookup data in an array in constant time.
+Define 'Lossless Compression'
+    Will not permanently remove data
+    Rewrites data in a more efficient format
+    Can be fully reconstructed into original file
+    Quality of file is not lost
+Define 'Lossy Compression'
+    Reduces the size of a file
+    Removes some of its information
+    Can't recover an original file after being lossy compressed
+    Because it reduces the file by completely disregarding some information
+Define 'RLE'
+    Run length encoding.
+    Method of lossless compression.
+    Repeated values are removed and replaced with one occurence of data.
+    Followed by number of times it should be repeated.
+    Example
+    AAAAAABBBBB => A6B5C3.
+Define 'Symmetric Encryption'
+    Both sender and receiver share same private key.
+    Used for both encrypting and decrypting data
+    Key distributed during key exchange => if intercepted here any communications can be intercepted and decrypted using key.
+    Important to keep key secret.
+Give 2 file formats that use lossy compression.→JPEG and MP3
+Give 3 examples of file formats that use lossless compression.→ZIP, PNG and GIF
+What is the advantage of lossy compression?→Can result in smaller file sizes than lossless.
+How is data inserted into a hash table?
+    Hash function is applied to the key to get an index.
+    Storing the value at that index in the hash table.
+    If index already taken, collision resolution method is used.
+List 2 effects of lossy compression.
+    More pixelated images
+    Less clear audio recording
+What happens if 2 pieces of data (key) produce same hash?
+    Collision occurs and must be resolved.
+    Could either use linear probing, chaining or use a second hash function to generate a new hash.
+    Good hash functions have low collision chance and quick to calculate
+What must be transferred along data compressed using dictionary compression?→The dictionary used form the compression
+What is the advantage of compressing files?
+    Main thing is that it makes files smaller so...
+        Cheaper to store files: more files can be stored with same amount of storage space.
+        Saves time and money as less time is taken to transfer them over the internet because less data to transfer.
+When are hash tables often used?
+    Used extensively in situations where a lot of data needs to be stored with constant access times
+    Eg. Caches and databases
+When does RLE works the best?
+    Relies on consecutive pieces of data being same
+    If there is little repetition => no great reduction in file size
+Why is hashing more useful to store passwords than encryption?
+    Output hash function can't be reversed to form the key
+    Password entered by user can be hashed and checked agaisnt key to see if it is correct
+    Successful hacker would only gain access to keys => can't be reversed to gain passwords
+Describe two ways in which hashing can be used in databases.
+    For security: hash passwords in database to make sure they cannot be read if stolen.
+    For direct access: records can be quickly accessed using hash of index as address.
