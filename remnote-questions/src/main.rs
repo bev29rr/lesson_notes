@@ -65,7 +65,8 @@ fn generate_pdf(questions: &[(u32, String, Vec<String>)], path: &Path) -> io::Re
     let mut current_y = page_height - margin;
 
     for (question_number, (_, question, answers)) in questions.iter().enumerate() {
-        let numbered_question = format!("{}. {}", question_number + 1, question);
+        // Convert Unicode characters to ASCII equivalents
+        let numbered_question = format!("{}. {}", question_number + 1, convert_unicode(&question));
         let wrapped_question = wrap_text(&numbered_question, max_chars - mark_reserve);
         let dot_lines = answers.len().saturating_mul(2).saturating_sub(1);
         let required_space = wrapped_question.len() as f32 * line_height
@@ -128,11 +129,11 @@ fn generate_pdf(questions: &[(u32, String, Vec<String>)], path: &Path) -> io::Re
     current_y -= line_height;
 
     for (question_number, (_, question, answers)) in questions.iter().enumerate() {
-        let header = format!("{}. {}", question_number + 1, question);
+        let header = format!("{}. {}", question_number + 1, convert_unicode(&question));
         let wrapped_header = wrap_text(&header, max_chars - mark_reserve);
         let mut answer_lines = Vec::new();
         for answer in answers {
-            let wrapped_answer = wrap_text(answer, max_chars - 4);
+            let wrapped_answer = wrap_text(&convert_unicode(&answer), max_chars - 4);
             for line in wrapped_answer {
                 answer_lines.push(format!("    {}", line));
             }
@@ -186,6 +187,98 @@ fn generate_pdf(questions: &[(u32, String, Vec<String>)], path: &Path) -> io::Re
     }
 
     document.finish().map_err(|e| io::Error::new(io::ErrorKind::Other, e.to_string()))
+}
+
+/// Convert Unicode characters (Greek, mathematical symbols, etc.) to readable ASCII equivalents
+fn convert_unicode(text: &str) -> String {
+    text.chars()
+        .map(|c| match c {
+            // Greek letters (lowercase)
+            'α' => "alpha".to_string(),
+            'β' => "beta".to_string(),
+            'γ' => "gamma".to_string(),
+            'δ' => "delta".to_string(),
+            'ε' | 'ϵ' => "epsilon".to_string(),
+            'ζ' => "zeta".to_string(),
+            'η' => "eta".to_string(),
+            'θ' | 'ϑ' => "theta".to_string(),
+            'ι' => "iota".to_string(),
+            'κ' | 'ϰ' => "kappa".to_string(),
+            'λ' => "lambda".to_string(),
+            'μ' => "mu".to_string(),
+            'ν' => "nu".to_string(),
+            'ξ' => "xi".to_string(),
+            'ο' => "omicron".to_string(),
+            'π' | 'ϖ' => "pi".to_string(),
+            'ρ' | 'ϱ' => "rho".to_string(),
+            'ς' | 'σ' => "sigma".to_string(),
+            'τ' => "tau".to_string(),
+            'υ' => "upsilon".to_string(),
+            'φ' | 'ϕ' => "phi".to_string(),
+            'χ' => "chi".to_string(),
+            'ψ' => "psi".to_string(),
+            'ω' => "omega".to_string(),
+            // Greek letters (uppercase)
+            'Α' => "Alpha".to_string(),
+            'Β' => "Beta".to_string(),
+            'Γ' => "Gamma".to_string(),
+            'Δ' => "Delta".to_string(),
+            'Ε' => "Epsilon".to_string(),
+            'Ζ' => "Zeta".to_string(),
+            'Η' => "Eta".to_string(),
+            'Θ' => "Theta".to_string(),
+            'Ι' => "Iota".to_string(),
+            'Κ' => "Kappa".to_string(),
+            'Λ' => "Lambda".to_string(),
+            'Μ' => "Mu".to_string(),
+            'Ν' => "Nu".to_string(),
+            'Ξ' => "Xi".to_string(),
+            'Ο' => "Omicron".to_string(),
+            'Π' => "Pi".to_string(),
+            'Ρ' => "Rho".to_string(),
+            'Σ' => "Sigma".to_string(),
+            'Τ' => "Tau".to_string(),
+            'Υ' => "Upsilon".to_string(),
+            'Φ' => "Phi".to_string(),
+            'Χ' => "Chi".to_string(),
+            'Ψ' => "Psi".to_string(),
+            'Ω' => "Omega".to_string(),
+            // Mathematical symbols
+            '∝' => " proportional_to ".to_string(),
+            '≈' => "approx".to_string(),
+            '≠' => "!=".to_string(),
+            '≤' => "<=".to_string(),
+            '≥' => ">=".to_string(),
+            '∞' => "infinity".to_string(),
+            '√' => "sqrt".to_string(),
+            '∫' => "integral".to_string(),
+            '∑' => "sum".to_string(),
+            '∏' => "product".to_string(),
+            '±' => "+/-".to_string(),
+            '×' => "x".to_string(),
+            '÷' => "/".to_string(),
+            '·' => ".".to_string(),
+            '°' => "deg".to_string(),
+            '′' => "'".to_string(),
+            '″' => "''".to_string(),
+            '∠' => "angle".to_string(),
+            '⊥' => "perpendicular".to_string(),
+            '∥' => "parallel".to_string(),
+            '→' => "->".to_string(),
+            '←' => "<-".to_string(),
+            '↑' => "up".to_string(),
+            '↓' => "down".to_string(),
+            '↔' => "<->".to_string(),
+            '⇒' => "=>".to_string(),
+            '⇐' => "<=".to_string(),
+            '⇔' => "<=>".to_string(),
+            '∈' => "elem".to_string(),
+            '∉' => "not_elem".to_string(),
+            '∅' => "empty".to_string(),
+            '∇' => "nabla".to_string(),
+            _ => c.to_string(),
+        })
+        .collect()
 }
 
 fn wrap_text(text: &str, max_chars: usize) -> Vec<String> {
