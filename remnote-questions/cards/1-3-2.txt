@@ -1,15 +1,3 @@
-Define '1 to 1 Entity Relationship'
-    Each entity can only be linked to one other entity
-    Eg.  relationship between a husband and wife.
-    The husband entity can only be  associated with one wife entity and vice versa.
-    Demonstrated using  a single line used to connect two entities.
-    https://remnote-user-data.s3.amazonaws.com/DPh0MJ2pa9ZRHF42LmHkQZsUt30QNlBDkB9JkM6n2UVBEY_2paP_-x3gnqJzNi4LKXOmqQxo52NInKdJE4GziMaFYc_M7gnPhsTf6HpT0tGGiJ-I8Y_NXaeZ-WSm5zVV.jpeg
-Define '1 to Many Entity Relationship'
-    One table can be associated with many other tables
-    Eg. a  mother having multiple children.
-    Similarly, multiple child entities can be linked to the  same mother entity.
-    Demonstrated by a branch on  one side
-    https://remnote-user-data.s3.amazonaws.com/04kZRaZ4ScCrOMFaveKnl1QDm2gycwTRgOoXfzYcUy6JBIiLN5cYRSY5UWsNJv4PUr42bFUZ-4tXR1cbIChd8aX4r7PFwVL60lVa9PEBOngpVIs2peuTvdw_7FaLsjNp.jpeg
 Define 'Atomicity' (ACID)→A transaction must be processed in its entirety or not at all
 Define 'Consistency' (ACID)→A transaction must maintain the referential integrity rules between linked tables
 Define 'Durability' (ACID)→Once a transaction has been executed it will remain so regardless of the  circumstances surrounding it, such as in the event of a power cut.
@@ -117,11 +105,6 @@ What does it mean for a database to have 'no non-key dependencies'?→Attribute 
 What is the biggest problem with 'Record Locking'?
     Deadlock
     
-    Eg.
-        User 1 accesses Customer 1’s record and as a result locks Customer 1’s record.
-        Simultaneously User 2 accesses Customer 2’s record and as a result locks  Customer 2’s record.
-        Now User 1 tries to access Customer 2’s record, and User 2 tries to access  Customer 1’s record.
-        User 1 waits for Customer 2’s record to be free and User 2 waits for Customer 1’s  record to be free and as they are both waiting, there is no progress causing a  deadlock.
 Why could redundancy in databases be desirable?
     If there is any damage to one copy the others will remain unaffected and can be recovered.
     Some information is very important and people and companies cannot afford to lose this information.

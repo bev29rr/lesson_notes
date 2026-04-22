@@ -54,4 +54,49 @@ This is now because the flow in must equal the flow out.
 We also need to add the constraints of the maximum possible flows allowed through each arc.
 	$SA\le8,SB\le5,...$ and so on. 
 (Remember that since $AB$ is not directed, flows can go both ways, so we write the flow constraint for $AB$ and $BA$)
-#todo Critical Path Analysis
+# Critical Path Analysis
+Critical Path Analysis for LP solvers 
+(where start node is S and end node is T)
+## Point based CPA LPs
+**This is when the problem gives you the points in time as A,B, C ... (nodes) NOT the Activities (edges)**
+### Objective function
+The objective is to minimise the time taken for an activity network.
+Hence, the objective function is to minimise the amount taken to reach the end node T:
+Minimise:  T
+### Constraints
+We need to ensure that the time taken to reach each event is at least the time taken on the activity network. Hence, we need (for all arcs connected to the start node)
+
+Subject to:
+	$A \ge 4$
+	$B \ge 3$
+
+And for all nodes that are connected to other nodes, we need them to satisfy the fact that they must take at least the time taken to get to the previous node + the activities' time:
+Subject to:
+	$A \ge B + 13$ (A can be reached by completing B then A instead of through S)
+	$T \ge B + 9$ 
+	$T \ge A + 20$ 
+
+Note that here,  (T can be reached to by either A or B)
+### Normalising constraints
+To feed them into an LP solver, we need to normalise them, however. This means that 
+Subject to:
+	$A \ge 4$ (No need to be normalised)
+	...
+	$A - B \ge 13$
+	...
+## Activity based CPA LPs
+For questions where Activity is given/wanted, we need to take a different (but similar approach)
+(as seen in Question 4 OCR MEI B MwA 2020)
+### Objective function
+The same as before.
+Minimise: T
+### Constraints
+Since there are no nodes, we need to acknowledge that the time taken to each activity A will be at least the previous activities' time + the time taken to get there. For example:
+Subject to:
+	$T \ge 6 + I$ (This means that the time to complete T must be the time to complete activities up to I plus the time taken for I (6))
+	$I \ge 10 + D$ 
+
+Normalise!
+
+# Bipartite Graph LPs
+#todo: write up

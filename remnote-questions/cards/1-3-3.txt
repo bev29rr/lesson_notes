@@ -78,9 +78,7 @@ Define 'web crawlers'
 Define 'wide area network'
     WAN
     Network spread over a large geographical area
-    Communicate between sites
-    May be owned by an organization; relies on third party carriers
-    Eg. large companies with multiple offices
+    May be owned by an organization
 Define 'worm'
     Malware
     Sub-class of a virus; self-replicates by spreading copies of itself without user intervention
@@ -265,7 +263,7 @@ What is 'TCP/IP'?
     The protocol stack is set networking protocols that work together as four layers
     Packets passed up and down layers during communication
 What is malware designed to do?→Cause inconvenience, loss or damage to programs, data or computer systems.
-What is meant by 'payroll' (data packets)→Raw data to be transmitted
+What is meant by 'payload' (data packets)→Raw data to be transmitted
 What is the largest WAN?→The internet
 What is the role of the DNS server?→Translate the domain names into IP addresses when we wish to access a website.
 Where are peer-to-peer networks often used?→Piracy: as it is almost impossible to trace file's origins

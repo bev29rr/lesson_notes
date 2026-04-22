@@ -87,7 +87,7 @@ List 3 disadvantages of the 'Waterfall Methodology'
     Lack of flexibility
     No risk analysis
     Limited user involvement
-State 4 criteria considered during 'Evaluation'
+State 4 criteria considered during 'Evaluation' stage of SDLC
     Robustness
     Reliability
     Portability

@@ -49,7 +49,7 @@ Properties of a Black Hole (name 2)
     Event horizon
     Escape velocity exceeds speed of light
     Central singularity
-Define stellar parallax→Apparent shift in a star's position, RELATIVE TO OTHER START, due to Earth's orbit around the sun
+Define stellar parallax→Apparent shift in a star's position, RELATIVE TO OTHER STARS, due to Earth's orbit around the sun
 State the Big Bang Timeline
     10^-35s: photons and EM radiation
     10^-6 - 1s: Mass is created
