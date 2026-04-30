@@ -1,0 +1,240 @@
+Define 'Linked List'
+    Dynamic data structure used to hold ordered sequence.
+    Where nodes are connected using pointers.
+    Nodes stored anywhere in memory - not sequential/not stored in contiguous data locations.
+    List accessed by following links from one node to the next.
+List the 4 properties of an array.
+    Ordered
+    Static
+    Mutable
+    Single type item
+    Holds data in contiguous memory
+Define "Child" (tree)→A node with incoming nodes
+Define "Edge" (tree)
+    Connects two nodes together
+    Known as a branch or arc
+Define "Leaf" (tree)
+    A node with no children
+    https://remnote-user-data.s3.amazonaws.com/KcMe9dt_TDGUBOsI5JMt608cZgehrH-41120POqMMqs_AD9HHmJkdvUHsIZYmlCh3pkSAnEJaij010GnrE96Xwv83-Mw32zhqbqUL-eUqzlhIkYthblKyjIHI-LEPvcy.jpeg
+Define "Node" (tree)→An item in the tree
+Define "Parent" (tree)
+    A  node with outgoing edges
+    https://remnote-user-data.s3.amazonaws.com/BYiwzRed43IN9bpuVT8-qCCT8akBVHkFIXSM_46RsE_MYOSBw2xy4AdZZJOxnUO3YuRji7kP87_53w1JneOkR7i0t2Eh8-4Pnmq49Pq--IJgyH_aurUMCW2J-QBp9lRL.jpeg
+Define "Root" (tree)→A single node which does not have any incoming nodes
+Define "Subtree" (tree)→Subsection of a tree consisting of a parent and all the children of a parent
+Define "Tree"
+    Connected form of a graph
+    Nodes are connected using branches/edges
+    Have a root node (top node)
+    https://remnote-user-data.s3.amazonaws.com/dml3MyLcY1L64Rr1aZ7LgY_8sjidqRmQxXXKG0ozV9gW_GNNmbuysG8psxSv-hDEaXmiyv9r0eZPv5zXfdSbEu56x975-dtP3UKWtVMQbzb2DPX-nez4LI8UEBFp0zUF.jpeg
+What does it mean for a data structure to be '0 indexed'?→The first element is considered to be at position 0 (index 0).
+Define 'Adjacency List'
+    Way of representing a graph.
+    Each node and its neighbours are stored in a list.
+Define 'Adjacency Matrix'
+    Form of representing a graph.
+    Square matrix where rows and columns represent nodes.
+    Values shows wheter there is an edge between them.
+Define 'Binary Tree'
+    Type of tree
+    Each node has a max of two children
+Define 'Circular Queue'
+    FIFO structure
+    Has a front-pointer and a nextFree pointer.
+    Can loop back to front of array and store values there (if empty).
+How can hashing collisions be resolved?
+    Can be resolved either using linear probing or chaining.
+    Linear probing: check the next available slot in the table and store it there.
+    Chaining: linked list at each index to store multiple items.
+A value is hashed, but a collision happens. What is meant by 'collision'?→Two different pieces of data are mapped to the same hashed value.
+Define 'Directed Graph'.→The edges can only be transversed in one direction
+What is meant if a data structure is dynamic?
+    Can store a non-fixed number of items.
+    System allocates memory dynamically at runtime.
+Define 'Graph'
+    Data structure consisting of nodes connected by edges
+    Dynamic
+Define 'Immutable'→Items cannot change
+Define 'In-Order Traversal'
+    Draw an outline around tree
+    Nodes are traversed in the order in which you pass under them
+    Useful for traversing nodes in sequential order
+Explain the linear probing method in the context of hashing collisions.
+    Case 1: collision happens when attempting to add new item.
+        Index new item is trying to be added at is taken.
+        Keep increasing initial supposed index until a free index is found.
+    Case 2: tryinfg to .get()/retrieve a value
+        Information wanted is not found at index it is supposed to be at.
+        Keep increasing index until correct index holding the information is found.
+Define 'Linear Queue'
+    Items removed from the front and added to the end (FIFO).
+    Head-pointer: indicates first item of the queue.
+    NextFree-pointer: indicates the next free space in which an item can be added.
+Define 'List'
+    Dynamic; mutable and multiple data types
+    Ordered items
+    Items can occur more than once
+    Store items non-contiguously
+Define 'Mutable'→Items can change
+Define 'Post-Order Traversal'
+    Outline the tree
+    Nodes are traversed in order in which you pass them on the right
+Define 'Pre-order Traversal'
+    Outline tree
+    Nodes are traversed in the order in which you pass them on the left
+    Used in programming languages in which operation is written before the values (a+b => + a b)
+Define 'Queue'
+    data structure
+    FIFO
+    Items added to end of the queue and removed from front of the queue
+Define 'Record'
+    Can store multiple items of data under one identifier
+    Can store data of different data types.
+    Used in databases
+Define 'Stack'
+    abstract data structure
+    FILO
+    Items can only be added or removed from top/end of stack
+    Implemented in either dynamic or static structures
+Define 'Static'→Fixed number of items
+Define 'Tuples'
+    Data structure
+    Ordered
+    Any type of items
+    Immutable
+Define 'Undirected Graph'.→The edges can be transversed in both directions.
+Define 'Weighted Graph'.→A cost is attatched to each edge
+Explain 'Stack Overflow'→Error which occurs in static stacks when attempting to push an item onto a stack that is full
+Explain 'Stack Underflow'→Error which occurs in static stacks when attempting to pop an item from an empty stack
+Explain how backtracking is used in depth-first (post-order) traversals
+    When a leaf node is reached
+    Traversal backtracks to the leaf's parent node/last node with unvisited children
+Give 2 characteristics of binary search tree.
+    Each node can have 0, 1 or 2 child nodes.
+    Nodes are ordered (left nodes less and right nodes greater than parent).
+    Location to which a node is added depends on its order.
+Give 3 advantages of storing tasks in a binary search tree instead of a 1D array.
+    Searching is faster - O(n logn)
+    Inserting new tasks is faster
+    Do not need to sort the structure each time a new task is inserted.
+How are 'Tuples' initialised?
+    tupleExample = ("Value1", 2, "Value 3")
+    
+    Uses regular parenthesis instead of square ones
+How are binary trees usually implemented?→Using two-dimensional arrays
+How do computers process graphs (data structure)?→Use adjacency matrix or an adjacency list
+How do you search through a '2D Array'?
+    First go down the rows then across the columns to find a given position
+    Opposite of method to find coordinates
+How do you search through a '3D Array'?
+    Must use the syntax: threeDimensionalArray[x,y,z]
+    
+    z => array number
+    y => row number
+    x => column number
+Is memory wasted in static data structures?
+    No
+    Size of array is declared for number of data items that will be added when program is run
+List 2 advantages of 'Adjacency Matrix'
+    Time efficient; convenient to work with due quicker access times
+    Easy to add nodes
+    Suited for dense graphs (large number of nodes)
+List 3 examples of where queues (data structure) are used.
+    Printers
+    Keyboards
+    Simulators
+List 4 examples of Queue Operations
+    enQueue(value)
+    deQueue
+    isEmpty()
+    isFull()
+List 6 examples of Stack Operations
+    isEmpty()
+    isFull()
+    pop()
+    push(value)
+    peek()
+    size()
+List 8 operations can be done with 'Lists'
+    IsEmpty()
+    append(value)
+    remove(value)
+    search(value)
+    length()
+    index(value)
+    insert(pos, value)
+    pop(position)
+List an advantage of 'Adjacency Lists'
+    Memory efficient; only stores existing edges
+    Suited to sparse graphs (few edges)
+List an example of where stacks could be used
+    Used to reverse actions; go back a page in web browsers
+    Undo buttons in apps
+List the 3 methods of traversing a 'Binary Tree'
+    Pre-order
+    In-order
+    Post-order
+Stacks: static vs dynamic implementation
+    Static implementation is prefered when max size required is known in advance
+    As its easier to implement and make more efficient use of memory
+State 5 ways a graph data structure is different from a tree data structure.
+    Trees have a root node - graphs do not.
+    Trees do not allow cycles - graphs allow it.
+    Trees store hierarchy - graphs do not.
+    Trees are always undirected - graphs can be.
+    Trees are always connected - graphs can be.
+What are 'Hash Tables' normally used for?→Indexing, as provide fast access to data due to keys having unique, one-to-one relationship with address at which they are stored
+What are binary trees used for?
+    Represent info for binary searches
+    Binary trees are easy to search through
+What are the main features of linked lists?
+    Items are called nodes.
+    Each item stored at a unique index.
+    Have a data field which holds actual value stored.
+    Use pointers to connect nodes.
+    https://remnote-user-data.s3.amazonaws.com/7ruPDjNkKoLaxv3_qBs8W2NmZ9yQaEZcHwYl-egsrYoZ5E7XXY94kMLR5TyFz_cX4irM7i3QrL9A9s-m-OqE42t23skOt4OX3k1M6MscalLfF3_m1duS73CnWaIX6EVq.jpeg
+What are the 2 graph categories (data structures)
+    Directed Graph
+    Undirected Graph
+    Weighted Graph
+What is the advantage of using hash tables over linked lists?
+    Linked lists requires every node to be checked; longer to search. As list grows, time to access the node grows.
+    Hash tables enables direct access to the location of the record; same time will be taken as more nodes are added.
+What are the three cases of Hash Tables for .add()?
+    Nothing found at index => key is added at this index
+    Same key found at index => nothing is done as key is already stored there
+    Different key found at index => Linear probing, linked lists
+What are the three cases of Hash Tables for .get()?
+    Nothing found at index => returns nothing
+    Same key found at index => return it
+    Different key found at index => Linear probing, linked lists
+What are the two ways of traversing a graph?
+    Depth-first
+    Breadth-first
+What does 'memory stored non-contiguously' mean?→Data does not need to be stored one next to each other in the memory
+What does the 'pointer field' of Linked Lists contain?→Contains address (index) of the next item in the list
+What happens if not enough memory is allocated to a static data structure?→Program will crash or not work properly
+What is a '2D array'?
+    2 dimentional array
+    Collection of data items arranged in columns and rows
+    Visualised as a table or worksheet
+What is a '3D Array'?
+    3 Dimensional array
+    Can be visualised as a multi-page spreadsheet
+    Can be thought as multiple 2D arrays
+What is a 1D array?
+    Linear Array
+    Consecutive items have sequential indexes; one more than previous
+    0 indexed
+List two disadvantages of linked lists compared to arrays.
+    Uses lots of memory: storing pointers and when removing items they are not fully removed just pointers are updated.
+    Linked lists are stored in a sequence - cannot simply directly access item like with an array. Must traverse pointers.
+What is meant by 'Breadth-First Traversal'→Involves visiting all the adjoining nodes for each node in turn
+What is meant by 'Depth-First Traversal' of graphs?
+    Involves travelling down one route as far as possible
+    Before reversing and travelling as far down the next route as possible
+What is the most common way to represent a binary tree?→By storing each node with a left pointer and a right pointer
+How are hash tables and hash functions related?
+    Hash function takes input data (key) and outputs a hashed value (index).
+    Value is stored at that index.
+    To retrieve data: hash function hashes same key to same index, so value can be read from the given index from the table.

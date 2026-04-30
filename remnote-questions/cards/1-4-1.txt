@@ -1,0 +1,80 @@
+Define 'ASCII'
+    American Standard Code for Information Interchange.
+    Character encoding system.
+    Represents text using numbers (binary codes).
+    Uses 7 bits.
+    Allows for 128 different characters.
+Define 'Boolean'→Values are restricted to True or False
+Define 'Character Set'→Published collection of codes and corresponding characters which can be used by computers for representing text.
+Define 'Character' in the context of data types.
+    Single symbol used by a computer
+    Include letters A-Z, 0-9, hundreds of symbols like ?,@, #
+Define 'Integer' in the context of data types.→Whole numbers (including 0 and negatives).
+Explain what masks are in the context of binary patterns.
+    Mask is a binary pattern used to select/hide specific bits of a binary number.
+    Uses a bitwise operation: AND, OR or NOT.
+Why do we normalise binary floating-point numbers?
+    Ensuring a maximum precision for a fixed number of bits.
+    Keep format consistent
+    Help computers store and compare floating-point numbers accurately.
+Define 'Overflow Error'→Occurs when the result of a calculation is a number that is too large to be represented in the number of bits available.
+Define 'string' (data types)
+    Collection of characters
+    Stores single or successions of characters
+Define 'Underflow Error'→Occurs when the result of a calculation is a number that is too small to be represented in the number of bits available.
+Define 'Unicode'
+    Character set
+    Maps different binary values to characters
+    Each character is represented by 1-4 bytes
+    1 Million different characters - many not yet allocated
+What type of numbers can unsigned binary numbers represent?
+    Can only represent positive numbers
+    Computer must be told if number is signed or unsigned
+Give 2 advantages of Unicode over ASCII.
+    Unicode has many more characters: ideal for international use.
+    Unicodt provides international standard: text displays the same across different systems, avoids errors in character conversion.
+How do you know a binary number is normalised?→The binary number starts with the digits 01 (positive) or 10 (negative)
+How does a computer represent text?
+    Computers use character set (Unicode, ASCII)
+    Which maps binary values to characters
+    Each character is represented by a unique value
+How to convert from sign and magnitude to decimal?
+    Take note of the MSB: is it positive or negative?
+    Convert the rest of the digits
+    Add the sign in front of it
+List 2 examples of 'Character Sets'
+    ASCII
+    Unicode
+List 5 data types
+    Integer
+    Float/Real
+    Character
+    String
+    Boolean
+State 2 advantages of using 2's complement instead of sign and magnitude
+    Has only one way of representing 0 - can represent one extra value.
+    Calculations are more easily performed
+What are 8 binary digits called?→Byte
+What are the two parts of a floating point number?→Mantissa and the exponent
+What is a single binary digit called?→Bit
+What is half a byte called?→Nibble (4bits)
+What is the disadvantage of ASCII?
+    128 characters is plenty for standard western letters and symbols
+    Not enough space for representing other languages with different characters
+What is the exponent of the floating point number 101011 111?→111
+What is the LSB?
+    Least significant bit
+    The furthest bit to the right
+What is the mantissa of the floating point number 101011 111?→101011
+What is the most basic way of representing negative numbers in binary?
+    Sign and magnitude
+    Equivalent to adding + or - in front of a number
+    8th place value is a + (0) or  - (1)
+What is the MSB?
+    Most significant bit
+    Furthest bit to the left
+What is the result of a 'Left Shift'→Multiplication by 2n , where n is the number of places shifted.
+What is the result of a 'Right Shift'→Multiplication by 2-n , where n is the number of places shifted.
+When a shift is performed, how is the number padded?→Leading or trailiing zeros are added depending if it was a left or right shift.
+Apply a left shift to 0010 1101→0101 1010
+Apply a right shift to 0010 1101→0001 0110

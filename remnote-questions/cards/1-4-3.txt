@@ -1,0 +1,8 @@
+What is the purpose of a D-type flip flop circuit?
+    Store a value of one bit.
+    When a signal is given.
+Describe the inputs and outputs used by a D-type flip flop circuit.
+    Data input, clock input
+    Q output
+    When clock input goes high (rising edge) -> Q changes to D.
+    NOT Q is the reverse of Q
