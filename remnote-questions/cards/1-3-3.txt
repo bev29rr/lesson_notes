@@ -20,9 +20,6 @@ Define 'Data Packets'
 Define 'DNS'
     Domain Name System
     System used to name and organize internet resources
-DELETE
-    All processing and storage is done by server
-    All required from thinnest-client computer is very basic machine with very little processer power and no storage
 Define 'encryption'→Way of keeping data secure when transmitting it over the internet by making it unreadable if it is intercepted.
 Define 'Firewall'
     Piece of software or hardware
