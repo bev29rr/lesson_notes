@@ -1,15 +1,18 @@
 # 2.1 The language of networks
 **Graph** -> set of nodes/vertices
+ A graph with $n$ vertices is denoted as $K_n$ 
+ 
 ## Features of a graph
 - **Loops** -> An edge with the same vertex at both ends
-- **Order/degree** -> The number of edges incident on it. If there is a loop, then the arc is counted as two
+- **Order/degree** -> The number of edges incident on a vertex. If there is a loop, then the arc is counted as two
+
 ## Types of a graph
 - **Connected** -> every vertex is joined
 - **Simple** -> no loops and no repeated edges
 - **Simply connected** -> simple and connected
 	- **Tree** -> a simply connected graph with the **minimum** number of arcs
 	- **Complete graph** -> a simply connected graph with the **maximum** number of arcs
-- **Bipartite graph** -> A graph with $n$ vertices is denoted as $K_n$ 
+- **Bipartite graph** -> A graph that can be split into two disjointed graphs
 - **Digraph** -> A graph with directed arcs
 - **Undirected** -> Opposite of a digraph
 ## Incidence matrices 
